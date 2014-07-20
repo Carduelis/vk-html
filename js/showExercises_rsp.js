@@ -158,7 +158,7 @@ $('#go').one('click',function(){
 						} else {
 							alert('Упражнение выполнено!');
 							hideAndRemoveAllHints(); // Скрываем остаточную инфу от всех элементов
-							$('#bx-pager, #history').showActions();
+							$('#bx-pager, #history').show();
 							$('#history + .btn').remove();
 							$('#showBxPager').hide();
 							$('#chooseExercise,#reloadPage').addClass('active');

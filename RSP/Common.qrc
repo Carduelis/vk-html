@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/buttons">
+        <file>knob.png</file>
+        <file>switch_up.png</file>
+        <file>reo_knob.png</file>
+        <file>p_rotator.png</file>
+        <file>knob_sixty.png</file>
+        <file>switch_base.png</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>rsp.ico</file>
+    </qresource>
+</RCC>

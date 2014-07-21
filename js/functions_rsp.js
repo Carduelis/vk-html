@@ -121,6 +121,14 @@ $('#stack4_block2_front').on('dblclick',function(){
   location.href="rsp://launch/";
 });
 
+$('#stack6_block3_front').on('dblclick',function(){
+  location.href="rsp://launch/";
+});
+
+$('#stack6_block2_front').on('dblclick',function(){
+  location.href="rsp://launch/";
+});
+
 });
 
 

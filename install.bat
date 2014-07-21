@@ -6,7 +6,7 @@ set tmpfile=support.reg
 set seek=instPath
 if exist %tmpfile% del /q %tmpfile%
 for /f "delims=" %%a in (%verfile%) do (
-  (echo %%a)|>nul find /i "%seek%"&&((echo @="%CD2%\\RSP.exe")>>%tmpfile%)
+  (echo %%a)|>nul find /i "%seek%"&&((echo @="%CD2%\\RSP\\RSP.exe")>>%tmpfile%)
   (echo %%a)|>nul find /i "%seek%"||(echo %%a)>>%tmpfile%
 )
 

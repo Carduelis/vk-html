@@ -60,9 +60,6 @@ button.ex {
 	}
 }
 body {
-	-webkit-backface-visibility: hidden;
--moz-backface-visibility:    hidden;
--ms-backface-visibility:     hidden;
 }
 
 body> header {
@@ -490,6 +487,9 @@ body> header {
 				//padding: @scale*70 @scale*200;
 				//padding: @scale*70 0;
 				> div {
+					&.z-index {
+						z-index: 99;
+					}
 					.radius(@pad/2);
 					box-shadow: inset 0 0 0 @scale*10 @color-border, inset 0 0 0 @pad/2 @color-border;;
 

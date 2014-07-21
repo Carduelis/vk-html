@@ -491,7 +491,8 @@ body> header {
 				//padding: @scale*70 0;
 				> div {
 					.radius(@pad/2);
-					box-shadow: inset 0 0 0 @scale*10 @color-border;
+					box-shadow: inset 0 0 0 @scale*10 @color-border, inset 0 0 0 @pad/2 @color-border;;
+
 					background-repeat: no-repeat;
 					&.transparent {
 						opacity: .2;
@@ -516,7 +517,6 @@ body> header {
 						width: 100%;
 						height: 100%;
 						.radius(@pad/2);
-						box-shadow: inset 0 0 0 @pad/2 @color-border;
 					}
 					&::before {
 						.transitions(all,.1s);
@@ -536,7 +536,7 @@ body> header {
 					}
 					&:hover, &.hover {
 						&::after {
-							box-shadow: inset 0 0 0 @pad/2 fadeout(@color-txt, 40%);
+							//box-shadow: inset 0 0 0 @pad/2 fadeout(@color-txt, 40%);
 						}
 					}
 					&.active {

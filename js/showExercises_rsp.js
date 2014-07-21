@@ -215,7 +215,7 @@ $(window).resize(function(){
 });
 $(window).scroll(function(){
 	screenTop = $(this).scrollTop();
-	screenBottom = screenTop + screenHeight;
+	screenBottom = screenTop + screenHeight - 60;
 	//console.info(screenTop);
 });
 function focusOnElement(parameter){

@@ -147,32 +147,33 @@ function showSideHint(eN,choosenParam) {
 		//(str_whatever(eN,'inBlock',choosenParam) == str_whatever((eN-1),'inBlock',choosenParamPrev))
 		// текущее и предыдущие действия должны быть на одном блоке
 	) {
-		if (str_whatever(eN,'onSide',choosenParam).substr(14) != 'front') {
-			// проверяет, что это не возврат на переднюю сторону
-			var sideOpener = $('#'+str_whatever(eN,'inBlock',choosenParam)).find('span[for="'+str_whatever(eN,'onSide',choosenParam).substr(14)+'"]');
-			sideOpener.addClass('active');
-			focusOnElement(sideOpener.offset().top);
-			sideOpener.click(function(){
-				focusOnElement();
-			});
-			
-		} else if (str_whatever(eN,'onSide',choosenParam).substr(14) == 'front') {
-			// проверяет, что это возврат на переднюю сторону
-			var sideCloser = $('#'+str_whatever(eN,'inBlock',choosenParam)).find('i.back');
-			var sideOpener = $('#'+str_whatever(eN,'inBlock',choosenParam)).find('span');
-			sideOpener.removeClass('active');
-			sideCloser.addClass('active');
-			console.info(str_whatever(eN,'onSide',choosenParam)+' '+str_whatever((eN-1),'onSide',choosenParamPrev));
-			if (sideCloser) {
-				if (sideCloser.offset()) {
-					focusOnElement(sideCloser.offset().top);
+		if (str_whatever(eN,'onSide',choosenParam)) {
+			if (str_whatever(eN,'onSide',choosenParam).substr(14) != 'front') {
+				// проверяет, что это не возврат на переднюю сторону
+				var sideOpener = $('#'+str_whatever(eN,'inBlock',choosenParam)).find('span[for="'+str_whatever(eN,'onSide',choosenParam).substr(14)+'"]');
+				sideOpener.addClass('active');
+				focusOnElement(sideOpener.offset().top);
+				sideOpener.click(function(){
+					focusOnElement();
+				});
+				
+			} else if (str_whatever(eN,'onSide',choosenParam).substr(14) == 'front') {
+				// проверяет, что это возврат на переднюю сторону
+				var sideCloser = $('#'+str_whatever(eN,'inBlock',choosenParam)).find('i.back');
+				var sideOpener = $('#'+str_whatever(eN,'inBlock',choosenParam)).find('span');
+				sideOpener.removeClass('active');
+				sideCloser.addClass('active');
+				console.info(str_whatever(eN,'onSide',choosenParam)+' '+str_whatever((eN-1),'onSide',choosenParamPrev));
+				if (sideCloser) {
+					if (sideCloser.offset()) {
+						focusOnElement(sideCloser.offset().top);
+					}
 				}
+				sideCloser.click(function(){
+					focusOnElement();
+				})
 			}
-			sideCloser.click(function(){
-				focusOnElement();
-			})
 		}
-		
 	}
 
 }

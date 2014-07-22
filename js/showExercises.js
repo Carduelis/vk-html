@@ -60,14 +60,16 @@ $('a[data-codename="passing"]').on('click', function(){
 
 
 function detectMultiply() {
-	if (thisEx[thisExId]['el'+eN].multiply) {
-		for(var i in exercisesOptions[thisExId]) {
-			if (thisEx[thisExId]['el'+eN].multiply == exercisesOptions[thisExId][i].typeName) {
-				choosenParam = window[exercisesOptions[thisExId][i].typeName];
+	if (thisEx[thisExId]['el'+eN]) {
+		if (thisEx[thisExId]['el'+eN].multiply) {
+			for(var i in exercisesOptions[thisExId]) {
+				if (thisEx[thisExId]['el'+eN].multiply == exercisesOptions[thisExId][i].typeName) {
+					choosenParam = window[exercisesOptions[thisExId][i].typeName];
+				}
 			}
+		} else {
+			choosenParam = null;
 		}
-	} else {
-		choosenParam = null;
 	}
 }
 
@@ -136,40 +138,46 @@ function showTrainingFeatures(eN,pN, choosenParam) {
 function showSideHint(eN,choosenParam) {
 	detectMultiplyPrev();
 	if (
-		(str_whatever((eN-1),'onSide',choosenParamPrev)) 
+		//(str_whatever((eN-1),'onSide',choosenParamPrev)) 
 		// проверяет наличие значения stackN_blockM_side
-		&&
+		//&&
 		(str_whatever(eN,'onSide',choosenParam) != str_whatever((eN-1),'onSide',choosenParamPrev))
 		// проверяет отличается ли сторона в предыдущем действии
-		&&
-		(str_whatever(eN,'inBlock',choosenParam) == str_whatever((eN-1),'inBlock',choosenParamPrev))
+		//&&
+		//(str_whatever(eN,'inBlock',choosenParam) == str_whatever((eN-1),'inBlock',choosenParamPrev))
 		// текущее и предыдущие действия должны быть на одном блоке
 	) {
-		if (str_whatever(eN,'onSide',choosenParam).substr(14) != 'front') {
-			// проверяет, что это не возврат на переднюю сторону
-			var sideOpener = $('#'+str_whatever(eN,'inBlock',choosenParam)).find('span[for="'+str_whatever(eN,'onSide',choosenParam).substr(14)+'"]');
-			sideOpener.addClass('active');
-			focusOnElement(sideOpener.offset().top);
-			sideOpener.click(function(){
-				focusOnElement();
-			})
-			
-		} else if (str_whatever(eN,'onSide',choosenParam).substr(14) == 'front') {
-			// проверяет, что это возврат на переднюю сторону
-			var sideCloser = $('#'+str_whatever(eN,'inBlock',choosenParam)).find('i.back');
-			var sideOpener = $('#'+str_whatever(eN,'inBlock',choosenParam)).find('span');
-			sideOpener.removeClass('active');
-			sideCloser.addClass('active');
-			console.info(str_whatever(eN,'onSide',choosenParam)+' '+str_whatever((eN-1),'onSide',choosenParamPrev));
-			focusOnElement(sideCloser.offset().top);
-			sideCloser.click(function(){
-				focusOnElement();
-			})
+		if (str_whatever(eN,'onSide',choosenParam)) {
+			if (str_whatever(eN,'onSide',choosenParam).substr(14) != 'front') {
+				// проверяет, что это не возврат на переднюю сторону
+				var sideOpener = $('#'+str_whatever(eN,'inBlock',choosenParam)).find('span[for="'+str_whatever(eN,'onSide',choosenParam).substr(14)+'"]');
+				sideOpener.addClass('active');
+				focusOnElement(sideOpener.offset().top);
+				sideOpener.click(function(){
+					focusOnElement();
+				});
+				
+			} else if (str_whatever(eN,'onSide',choosenParam).substr(14) == 'front') {
+				// проверяет, что это возврат на переднюю сторону
+				var sideCloser = $('#'+str_whatever(eN,'inBlock',choosenParam)).find('i.back');
+				var sideOpener = $('#'+str_whatever(eN,'inBlock',choosenParam)).find('span');
+				sideOpener.removeClass('active');
+				sideCloser.addClass('active');
+				console.info(str_whatever(eN,'onSide',choosenParam)+' '+str_whatever((eN-1),'onSide',choosenParamPrev));
+				if (sideCloser) {
+					if (sideCloser.offset()) {
+						focusOnElement(sideCloser.offset().top);
+					}
+				}
+				sideCloser.click(function(){
+					focusOnElement();
+				})
+			}
 		}
-		
 	}
 
 }
+
 
 
 function showActions(eN, pN, aN, choosenParam) {
@@ -222,9 +230,11 @@ function str_action_whatever(eN, subject, pN, aN, choosenParam) 	{
 }
 function str_whatever(eN, subject, choosenParam) {
 	if (choosenParam) {
-		if (thisEx[thisExId]['el'+eN][choosenParam]) {
-			if (thisEx[thisExId]['el'+eN][choosenParam].current) {
-				return thisEx[thisExId]['el'+eN][choosenParam].current[subject];
+		if (thisEx[thisExId]['el'+eN]) {
+			if (thisEx[thisExId]['el'+eN][choosenParam]) {
+				if (thisEx[thisExId]['el'+eN][choosenParam].current) {
+					return thisEx[thisExId]['el'+eN][choosenParam].current[subject];
+				}
 			}
 		}
 	} 	else {
@@ -238,9 +248,11 @@ function str_whatever(eN, subject, choosenParam) {
 
 function str_pos_whatever(eN, subject, pN, choosenParam) { 
 	if (choosenParam) {
-		if (thisEx[thisExId]['el'+eN][choosenParam]) {
-		 	if (thisEx[thisExId]['el'+eN][choosenParam].positions) {
-				return thisEx[thisExId]['el'+eN][choosenParam].positions['position_'+pN][subject];
+		if (thisEx[thisExId]['el'+eN]) {
+			if (thisEx[thisExId]['el'+eN][choosenParam]) {
+			 	if (thisEx[thisExId]['el'+eN][choosenParam].positions) {
+					return thisEx[thisExId]['el'+eN][choosenParam].positions['position_'+pN][subject];
+				}
 			}
 		}
 	} 	else {
@@ -275,9 +287,12 @@ function obj_element(eN, choosenParam) {
 }
 
 function append_desc(eN, pN, choosenParam) {
+	$('section > div[side]').removeClass('z-index');
 	if (choosenParam) {
+		$('#'+str_whatever(eN,'onSide',choosenParam)).addClass('z-index');
 		obj_element(eN, choosenParam).append('<div class="hint"><p>'+str_pos_whatever(eN, 'description', pN,choosenParam)+'</p></div>')
 	} else {
+		$('#'+str_whatever(eN,'onSide')).addClass('z-index');
 		obj_element(eN).append('<div class="hint"><p>'+str_pos_whatever(eN, 'description', pN)+'</p></div>')
 	}
 }

@@ -460,41 +460,76 @@ var exercisesContainer = {
 		},
 
 		el9 : {
-			click : '6',
-			current : {
-				inStack : 'stack7',
-				inBlock : 'stack7_block1',
-				onSide : 'stack7_block1_front',
-				num : '23',
-				type : 'toggler',
+			multiply: 'fiders',
+			fider1 : {
+				click : '6',
+				current : {
+					inStack : 'stack7',
+					inBlock : 'stack7_block1',
+					onSide : 'stack7_block1_front',
+					num : '23',
+					type : 'toggler',
+				},
+				positions : {
+					position_1 : {
+						state : '3',
+						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ПОСАДОЧНЫЙ в положение выбранного фидера',
+					},
+				},
 			},
-			positions : {
-				position_1 : {
-					state : '3',
-					description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ПОСАДОЧНЫЙ в положение выбранного фидера',
+			fider2 : {
+				click : '6',
+				current : {
+					inStack : 'stack7',
+					inBlock : 'stack7_block1',
+					onSide : 'stack7_block1_front',
+					num : '23',
+					type : 'toggler',
+				},
+				positions : {
+					position_1 : {
+						state : '1',
+						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ПОСАДОЧНЫЙ в положение выбранного фидера',
+					},
 				},
 			},
 		},
 		el10 : {
-			shift : '1', //проверить
-		},
-		el11 : {
-			click : '9',
-			current : {
-				inStack : 'stack7',
-				inBlock : 'stack7_block1',
-				onSide : 'stack7_block1_front',
-				num : '46',
-				type : 'toggler',
+			multiply: 'fiders',
+			fider1 : {
+				click : '7',
+				current : {
+					inStack : 'stack7',
+					inBlock : 'stack7_block1',
+					onSide : 'stack7_block1_front',
+					num : '13',
+					type : 'toggler',
+				},
+				positions : {
+					position_1 : {
+						state : '3',
+						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ДИСПЕТЧЕРСКИЙ в положение выбранного фидера',
+					},
+				},
 			},
-			positions : {
-				position_1 : {
-					state : '1',
-					description : 'Установите переключатель ВЕНТИЛЯТОРЫ в положение ИНДИКАТОРЫ',
+			fider2 : {
+				click : '6',
+				current : {
+					inStack : 'stack7',
+					inBlock : 'stack7_block1',
+					onSide : 'stack7_block1_front',
+					num : '13',
+					type : 'toggler',
+				},
+				positions : {
+					position_1 : {
+						state : '1',
+						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ДИСПЕТЧЕРСКИЙ в положение выбранного фидера',
+					},
 				},
 			},
 		},
-		el12 : {
+		el11 : {
 			click : '10',
 			current : {
 				inStack : 'stack7',
@@ -510,7 +545,39 @@ var exercisesContainer = {
 				},
 			},
 		},
+		el12 : {
+			click : '10',
+			current : {
+				inStack : 'stack7',
+				inBlock : 'stack7_block1',
+				onSide : 'stack7_block1_front',
+				num : '46',
+				type : 'toggler',
+			},
+			positions : {
+				position_1 : {
+					state : '1',
+					description : 'Установите переключатель ВЕНТИЛЯТОРЫ в положение ИНДИКАТОРЫ',
+				},
+			},
+		},
 		el13 : {
+			click : '10',
+			current : {
+				inStack : 'stack7',
+				inBlock : 'stack7_block1',
+				onSide : 'stack7_block1_front',
+				num : '34',
+				type : 'toggler',
+			},
+			positions : {
+				position_1 : {
+					state : '1',
+					description : 'Установите переключатель ВЕНТИЛЯТОРЫ в положение ДРЛ',
+				},
+			},
+		},
+		el14 : {
 			click : '11',
 			current : {
 				inStack : 'stack7',
@@ -526,7 +593,23 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el14 : {
+		el15 : {
+			click : '11',
+			current : {
+				inStack : 'stack7',
+				inBlock : 'stack7_block1',
+				onSide : 'stack7_block1_front',
+				num : '73',
+				type : 'toggler',
+			},
+			positions : {
+				position_1 : {
+					state : '1',
+					description : 'Включите автомат ДИСПЕТЧЕРСКИЙ на распределительном щите',
+				},
+			},
+		},
+		el16 : {
 			click : '12',
 			current : {
 				inStack : 'stack6',
@@ -542,7 +625,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el15 : {
+		el17 : {
 			click : '13',
 			current : {
 				inStack : 'stack2',
@@ -558,7 +641,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el16 : {
+		el18 : {
 			click : '14',
 			current : {
 				inStack : 'stack2',
@@ -574,7 +657,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el17 : {
+		el19 : {
 			click : '15',
 			current : {
 				inStack : 'stack2',
@@ -590,7 +673,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el18 : {
+		el20 : {
 			click : '16',
 			current : {
 				inStack : 'stack3',
@@ -614,7 +697,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el19 : {
+		el21 : {
 			click : '17',
 			current : {
 				inStack : 'stack7',
@@ -630,7 +713,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el20 : {
+		el22 : {
 			click : '18',
 			current : {
 				inStack : 'stack6',
@@ -678,7 +761,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el21 : {
+		el23 : {
 			click : '19',
 			current : {
 				inStack : 'stack6',
@@ -694,7 +777,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el22 : {
+		el24 : {
 			click : '20',
 			current : {
 				inStack : 'stack2',
@@ -838,7 +921,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el23 : {
+		el25 : {
 			click : '21',
 			current : {
 				inStack : 'stack1',
@@ -910,7 +993,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el24 : {
+		el26 : {
 			click : '22',
 			current : {
 				inStack : 'stack3',
@@ -934,7 +1017,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el25 : {
+		el27 : {
 			click : '23',
 			current : {
 				inStack : 'stack3',
@@ -945,7 +1028,7 @@ var exercisesContainer = {
 			},
 			positions : {
 				position_1 : {
-					state : '8',
+					state : '7',
 					description : 'Вращайте ручку вариака до установления тока в районе 0,8 мА',
 					action_1 : {
 						inStack : 'stack3',
@@ -958,7 +1041,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el26 : {
+		el28 : {
 			click : '24',
 			current : {
 				inStack : 'stack3',
@@ -974,7 +1057,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el27 : {
+		el29 : {
 			click : '25',
 			current : {
 				inStack : 'stack6',
@@ -994,7 +1077,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el28 : {
+		el30 : {
 			click : '26',
 			current : {
 				inStack : 'stack6',
@@ -1819,7 +1902,7 @@ var exercisesContainer = {
 				},
 				positions : {
 					position_1 : {
-						state : '1',
+						state : '4',
 						description : 'Отрегулируйте ток кристалла потенциометром так, чтобы ток был в зеленой зоне',
 						action_1 : {
 							inStack : 'stack1',
@@ -1839,9 +1922,9 @@ var exercisesContainer = {
 			in_red_zone : {
 				click : '31',
 				current : {
-					inStack : 'stack4',
-					inBlock : 'stack4_block1',
-					onSide : 'stack4_block1_front',
+					inStack : 'stack1',
+					inBlock : 'stack1_block4',
+					onSide : 'stack1_block4_front',
 					num : '13',
 					type : 'knob',
 				},
@@ -1850,9 +1933,9 @@ var exercisesContainer = {
 						state : '2',
 						description : 'Установите переключатель Напряжения шумов в положение Канал Подавл',
 						action_1 : {
-							inStack : 'stack4',
-							inBlock : 'stack4_block1',
-							onSide : 'stack4_block1_front',
+					inStack : 'stack1',
+					inBlock : 'stack1_block4',
+					onSide : 'stack1_block4_front',
 							type : 'scale',
 							num : '13',
 							status : '0',
@@ -1862,9 +1945,9 @@ var exercisesContainer = {
 						state : '0',
 						description : 'Установите переключатель  Напряжения шумов в положение Канал Основной',
 						action_1 : {
-							inStack : 'stack4',
-							inBlock : 'stack4_block1',
-							onSide : 'stack4_block1_front',
+					inStack : 'stack1',
+					inBlock : 'stack1_block4',
+					onSide : 'stack1_block4_front',
 							type : 'scale',
 							num : '13',
 							status : '0',
@@ -1875,9 +1958,9 @@ var exercisesContainer = {
 			out_red_zone : {
 				click : '31',
 				current : {
-					inStack : 'stack4',
-					inBlock : 'stack4_block1',
-					onSide : 'stack4_block1_front',
+					inStack : 'stack1',
+					inBlock : 'stack1_block4',
+					onSide : 'stack1_block4_front',
 					num : '13',
 					type : 'knob',
 				},
@@ -1886,9 +1969,9 @@ var exercisesContainer = {
 						state : '2',
 						description : 'Установите переключатель Напряжения шумов в положение Канал Подавл',
 						action_1 : {
-							inStack : 'stack4',
-							inBlock : 'stack4_block1',
-							onSide : 'stack4_block1_front',
+					inStack : 'stack1',
+					inBlock : 'stack1_block4',
+					onSide : 'stack1_block4_front',
 							type : 'scale',
 							num : '13',
 							status : '0',
@@ -1898,9 +1981,9 @@ var exercisesContainer = {
 						state : '0',
 						description : 'Установите переключатель  Напряжения шумов в положение Канал Основной',
 						action_1 : {
-							inStack : 'stack4',
-							inBlock : 'stack4_block1',
-							onSide : 'stack4_block1_front',
+					inStack : 'stack1',
+					inBlock : 'stack1_block4',
+					onSide : 'stack1_block4_front',
 							type : 'scale',
 							num : '13',
 							status : '25',
@@ -1912,7 +1995,29 @@ var exercisesContainer = {
 		el34 : {
 			multiply: 'noises',
 			in_red_zone : {
-				shift : '1', // У нас одно действие "лишнее". Открыть/закрыть крышку в действие не входит.
+			click : '32',
+				current : {
+					inStack : 'stack1',
+					inBlock : 'stack1_block4',
+					onSide : 'stack1_block4_front',
+					num : '1',
+					type : 'rotator',
+				},
+				positions : {
+					position_1 : {
+						state : '2', //это дёрти-хак, чтобы упражнение закончилось
+						description : 'Отрегулируйте уровень шумов потенциометром так, чтобы ток был в красной зоне',
+						action_1 : {
+							inStack : 'stack1',
+							inBlock : 'stack1_block4',
+							onSide : 'stack1_block4_front',
+							type : 'scale',
+							num : '13',
+							status : '2',
+						},
+					},
+				},
+				defaultPosition : '2',
 			},
 			out_red_zone :{
 				click : '32',
@@ -1938,6 +2043,22 @@ var exercisesContainer = {
 					},
 				},
 				defaultPosition : '2',
+			},
+		},
+		el35 : {
+			click : '33',
+			current : {
+				inStack : 'stack1',
+				inBlock : 'stack1_block4',
+				onSide : 'stack1_block4_front',
+				num : '1',
+				type : 'toggler',
+			},
+			positions : {
+				position_1 : {
+					state : '1',
+					description : 'Установите переключатель в положение ДИСТАНЦ',
+				},
 			},
 		},
 	},
@@ -2038,6 +2159,14 @@ var exercisesContainer = {
 							num : '57',
 							status : '5',
 						},
+						action_2 : {
+							inStack : 'stack3',
+							inBlock : 'stack3_block2',
+							onSide : 'stack3_block2_right',
+							type : 'scale',
+							num : '57',
+							status : '5',
+						},
 					},
 				},
 			},
@@ -2045,7 +2174,7 @@ var exercisesContainer = {
 		el2 : {
 			multiply: 'current_check',
 			current_ok : {
-				shift : '1',
+				shift : '0',
 			},
 			current_bad : {
 				click : '2',
@@ -2053,13 +2182,21 @@ var exercisesContainer = {
 					inStack : 'stack3',
 					inBlock : 'stack3_block2',
 					onSide : 'stack3_block2_right',
-					num : '1',
+					num : '2',
 					type : 'rotator',
 				},
 				positions : {
 					position_1 : {
 						state : '1',
-						description : 'Отрегулируйте напряжение смещения потенциометром',
+						description : 'Потенциометром НАПРЯЖЕНИЕ СМЕЩЕНИЯ установить наряжение по прибору контроль напряжения на 32',
+						action_1 : {
+							inStack : 'stack3',
+							inBlock : 'stack3_block2',
+							onSide : 'stack3_block2_front',
+							type : 'scale',
+							num : '57',
+							status : '-16',
+						},
 					},
 				},
 			},
@@ -2513,7 +2650,7 @@ var exercisesContainer = {
 					},
 					positions : {
 								position_1 : {
-									state : '0',
+									state : '2',
 									description : 'Переключателем ЧАСТОТА на распределительном щите выберите рабочую частоту в соответствии с переключателем блока НПО-Д',
 								},
 					},
@@ -2557,7 +2694,7 @@ var exercisesContainer = {
 						},
 						position_3 : {
 							state : '3',
-							description : 'Установите тумблер КОНТРОЛЬ НАПР. блока ПУ-Д в положение	+600В',
+							description : 'Установите тумблер КОНТРОЛЬ НАПР. блока ПУ-Д в положение	-600В',
 									action_1 : {
 										inStack : 'stack0',
 										inBlock : 'stack0_block2',
@@ -2670,122 +2807,6 @@ var exercisesContainer = {
 				inStack : 'stack0',
 				inBlock : 'stack0_block2',
 				onSide : 'stack0_block2_front',
-				num : '2',
-				type : 'knob',
-			},
-			positions : {
-				position_1 : {
-					state : '0',
-					description : 'Установите тумблер КОНТРОЛЬ НАПР. блока ПУ-Д в положение 24КВ',
-				},
-				position_2 : {
-					state : '2',
-					description : 'Установите тумблер КОНТРОЛЬ НАПР. блока ПУ-Д в положение	+180В',
-					action_1 : {
-						inStack : 'stack0',
-						inBlock : 'stack0_block2',
-						onSide : 'stack0_block2_front',
-						type : 'scale',
-						num : '22',
-					status : 'undefined',
-					},
-				},
-				position_3 : {
-					state : '3',
-					description : 'Установите тумблер КОНТРОЛЬ НАПР. блока ПУ-Д в положение	+600В',
-					action_1 : {
-						inStack : 'stack0',
-						inBlock : 'stack0_block2',
-						onSide : 'stack0_block2_front',
-						type : 'scale',
-						num : '22',
-					status : 'undefined',
-					},
-				},
-				position_4 : {
-					state : '4',
-					description : 'Установите тумблер КОНТРОЛЬ НАПР. блока ПУ-Д в положение +300В',
-					action_1 : {
-						inStack : 'stack0',
-						inBlock : 'stack0_block2',
-						onSide : 'stack0_block2_front',
-						type : 'scale',
-						num : '22',
-					status : 'undefined',
-					},
-				},
-				position_5 : {
-					state : '5',
-					description : 'Установите тумблер КОНТРОЛЬ НАПР. блока ПУ-Д в положение +700В',
-					action_1 : {
-						inStack : 'stack0',
-						inBlock : 'stack0_block2',
-						onSide : 'stack0_block2_front',
-						type : 'scale',
-						num : '22',
-					status : 'undefined',
-					},
-				},
-				position_6 : {
-					state : '6',
-					description : 'Установите тумблер КОНТРОЛЬ НАПР. блока ПУ-Д в положение +1200В',
-					action_1 : {
-						inStack : 'stack0',
-						inBlock : 'stack0_block2',
-						onSide : 'stack0_block2_front',
-						type : 'scale',
-						num : '22',
-					status : 'undefined',
-					},
-				},
-				position_7 : {
-					state : '7',
-					description : 'Установите тумблер КОНТРОЛЬ НАПР. блока ПУ-Д в положение +1800В',
-					action_1 : {
-						inStack : 'stack0',
-						inBlock : 'stack0_block2',
-						onSide : 'stack0_block2_front',
-						type : 'scale',
-						num : '22',
-					status : 'undefined',
-					},
-				},
-				position_8 : {
-					state : '1',
-					description : 'Установите тумблер КОНТРОЛЬ НАПР. блока ПУ-Д в положение 0',
-					action_1 : {
-						inStack : 'stack0',
-						inBlock : 'stack0_block2',
-						onSide : 'stack0_block2_front',
-						type : 'scale',
-						num : '22',
-					status : 'undefined',
-					},
-				},
-			},
-		},
-		el2 : {
-			click : '2',
-			current : {
-				inStack : 'stack0',
-				inBlock : 'stack0_block2',
-				onSide : 'stack0_block2_front',
-				num : '4',
-				type : 'button',
-			},
-			positions : {
-				position_1 : {
-					state : 'on',
-					description : 'Нажмите кнопку СПЦ на блоке ПУ-Д',
-				},
-			},
-		},
-		el3 : {
-			click : '3',
-			current : {
-				inStack : 'stack0',
-				inBlock : 'stack0_block2',
-				onSide : 'stack0_block2_front',
 				num : '5',
 				type : 'button',
 			},
@@ -2796,8 +2817,8 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el4 : {
-			click : '4',
+		el2 : {
+			click : '2',
 			current : {
 				inStack : 'stack1',
 				inBlock : 'stack1_block1',
@@ -2829,6 +2850,14 @@ var exercisesContainer = {
 						num : '1',
 					status : 'on',
 					},
+					action_1 : {
+						inStack : 'stack1',
+						inBlock : 'stack1_block1',
+						onSide : 'stack1_block1_front',
+						type : 'lamp',
+						num : '1',
+					status : 'off',
+					},
 					action_2 : {
 						inStack : 'stack1',
 						inBlock : 'stack1_block1',
@@ -2840,8 +2869,8 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el5 : {
-			click : '5',
+		el3 : {
+			click : '3',
 			current : {
 				inStack : 'stack1',
 				inBlock : 'stack1_block1',
@@ -2856,8 +2885,8 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el6 : {
-			click : '6',
+		el4 : {
+			click : '4',
 			current : {
 				inStack : 'stack1',
 				inBlock : 'stack1_block1',
@@ -2872,8 +2901,8 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el7 : {
-			click : '7',
+		el5 : {
+			click : '5',
 			current : {
 				inStack : 'stack0',
 				inBlock : 'stack0_block2',
@@ -2888,8 +2917,8 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el8 : {
-			click : '8',
+		el6 : {
+			click : '6',
 			current : {
 				inStack : 'stack0',
 				inBlock : 'stack0_block2',
@@ -2904,8 +2933,8 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el9 : {
-			click : '9',
+		el7 : {
+			click : '7',
 			current : {
 				inStack : 'stack1',
 				inBlock : 'stack1_block2',
@@ -2924,8 +2953,8 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el10 : {
-			click : '10',
+		el8 : {
+			click : '8',
 			current : {
 				inStack : 'stack1',
 				inBlock : 'stack1_block3',
@@ -2948,8 +2977,8 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el11 : {
-			click : '11',
+		el9 : {
+			click : '9',
 			current : {
 				inStack : 'stack1',
 				inBlock : 'stack1_block1',
@@ -2964,8 +2993,8 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el12 : {
-			click : '12',
+		el10 : {
+			click : '10',
 			current : {
 				inStack : 'stack6',
 				inBlock : 'stack6_block3',
@@ -2980,8 +3009,8 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el13 : {
-			click : '13',
+		el11 : {
+			click : '11',
 			current : {
 				inStack : 'stack4',
 				inBlock : 'stack4_block2',
@@ -2996,8 +3025,8 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el14 : {
-			click : '14',
+		el12 : {
+			click : '12',
 			current : {
 				inStack : 'stack7',
 				inBlock : 'stack7_block1',

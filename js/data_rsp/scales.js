@@ -421,11 +421,135 @@ scaleRelations = {
 			},
 			relation7 : {
 				status : '6',
-				degree : '50',
+				degree : '',
 			},
 			relation8 : {
 				status : '7',
-				degree : '50',
+				degree : '-20',
+			},
+		},
+		exercises : {
+			ex1 : {
+				elementTrigger : {
+					block : {
+					},
+					type : {
+					},
+					num : {
+					},
+					status : {
+					},
+				},
+				on : 'true',
+			},
+			ex2 : {
+				elementTrigger : {
+					block : {
+					},
+					type : {
+					},
+					num : {
+					},
+					status : {
+					},
+				},
+				on : 'true',
+			},
+			ex3 : {
+				elementTrigger : {
+					block : {
+					},
+					type : {
+					},
+					num : {
+					},
+					status : {
+					},
+				},
+				on : 'true',
+			},
+			ex4 : {
+				elementTrigger : {
+					block : {
+					},
+					type : {
+					},
+					num : {
+					},
+					status : {
+					},
+				},
+				on : 'true',
+			},
+			ex5 : {
+				elementTrigger : {
+					block : {
+					},
+					type : {
+					},
+					num : {
+					},
+					status : {
+					},
+				},
+				on : 'true',
+			},
+			ex6 : {
+				elementTrigger : {
+					block : {
+					},
+					type : {
+					},
+					num : {
+					},
+					status : {
+					},
+				},
+				on : 'true',
+			},
+			ex10 : {
+				elementTrigger : {
+					block : {
+					},
+					type : {
+					},
+					num : {
+					},
+					status : {
+					},
+				},
+				on : 'false',
+			},
+		},
+	},
+
+scaleRelationGroup675968756 : {
+		control : {
+			block : 'stack2_block2_front',
+			type : 'knob',
+			num : '2',
+		},
+		scale : {
+			block : 'stack2_block2_front',
+			type : 'scale',
+			num : '7',
+		},
+		relations : {
+			relation1 : {
+				status : '0',
+				degree : '0',
+			},
+			relation2 : {
+				status : '1',
+				degree : '40',
+			},
+			relation3 : {
+				status : '2',
+				degree : '11',
+			},
+			relation4 : {
+				status : '3',
+				degree : '15',
 			},
 		},
 		exercises : {
@@ -536,28 +660,36 @@ scaleRelations = {
 		},
 		'relations' : {
 			'relation1' : {
-				'status' : '1',
-				'degree' : '10'
+				'status' : '0',
+				'degree' : '-12'
 			},
 			'relation2' : {
-				'status' : '2',
-				'degree' : '20'
+				'status' : '1',
+				'degree' : '-50'
 			},
 			'relation3' : {
-				'status' : '3',
-				'degree' : '30'
+				'status' : '2',
+				'degree' : '-35'
 			},
 			'relation4' : {
-				'status' : '4',
-				'degree' : '40'
+				'status' : '3',
+				'degree' : '10'
 			},
 			'relation5' : {
-				'status' : '5',
-				'degree' : '50'
+				'status' : '4',
+				'degree' : '-14'
 			},
 			'relation6' : {
+				'status' : '5',
+				'degree' : '20'
+			},
+			'relation7' : {
 				'status' : '6',
-				'degree' : '60'
+				'degree' : '50'
+			},
+			'relation8' : {
+				'status' : '7',
+				'degree' : '50'
 			},
 		},
 		'exercises' : {
@@ -575,6 +707,113 @@ scaleRelations = {
 			},
 		},
 	},
+	scaleRelationGroup5423345234 : {
+		control : {
+			block : 'stack6_block3_front',
+			type : 'knob',
+			num : '14',
+		},
+		scale : {
+			block : 'stack6_block3_front',
+			type : 'scale',
+			num : '15',
+		},
+		relations : {
+			relation1 : {
+				status : '0',
+				degree : '45',
+			},
+			relation2 : {
+				status : '1',
+				degree : '20',
+			},
+			relation3 : {
+				status : '2',
+				degree : '12',
+			},
+		},
+		exercises : {
+			ex1 : {
+				elementTrigger : {
+					block : {
+					},
+					type : {
+					},
+					num : {
+					},
+					status : {
+					},
+				},
+				on : 'true',
+			},
+			ex2 : {
+				elementTrigger : {
+					block : {
+					},
+					type : {
+					},
+					num : {
+					},
+					status : {
+					},
+				},
+				on : 'true',
+			},
+			ex3 : {
+				elementTrigger : {
+					block : {
+					},
+					type : {
+					},
+					num : {
+					},
+					status : {
+					},
+				},
+				on : 'true',
+			},
+			ex4 : {
+				elementTrigger : {
+					block : {
+					},
+					type : {
+					},
+					num : {
+					},
+					status : {
+					},
+				},
+				on : 'true',
+			},
+			ex5 : {
+				elementTrigger : {
+					block : {
+					},
+					type : {
+					},
+					num : {
+					},
+					status : {
+					},
+				},
+				on : 'true',
+			},
+			ex6 : {
+				elementTrigger : {
+					block : {
+					},
+					type : {
+					},
+					num : {
+					},
+					status : {
+					},
+				},
+				on : 'true',
+			},
+		},
+	},
+
 
 	scaleRelationGroup503736352 : {
 		control : {

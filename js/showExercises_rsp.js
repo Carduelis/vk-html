@@ -109,20 +109,28 @@ $('#go').one('click',function(){
 						
 						if (eN != posCount(thisEx[thisExId]) - 1)  { // Проверка: последний ли элемент?
 							eN++;
-							 // Идем к следующему элементу
+							// Идем к следующему элементу
 							detectMultiply();
 							// Если следующий элемент содержит shift, то showTrainingFeatures(eN,pN,choosenParam) не может ничего показать
 
 							if (isShift(eN,choosenParam)) {
 
-								console.info(eN);
+								console.info(eN + ' shift');
 								eN = +eN + +thisEx[thisExId]['el'+eN][choosenParam].shift;
 								eN++;
 								// Нам так же нужно еще раз проверить новое значение choosenParam
 								detectMultiply();
-								console.info(eN);
+								console.info('eN: '+eN+'; posCount: '+posCount(thisEx[thisExId]));
+								if (eN == posCount(thisEx[thisExId]) - 1) {
+									alert('Упражнение выполнено!');
+									hideAndRemoveAllHints(); // Скрываем остаточную инфу от всех элементов
+									$('#bx-pager, #history').show();
+									$('#history + .btn').remove();
+									$('#showBxPager').hide();
+									$('#chooseExercise,#reloadPage').addClass('active');
+								}
 							}
-						/*
+							/*
 							if (obj_element(eN, choosenParam).attr('status') == str_pos_whatever(eN, 'status', 1, choosenParam) ) {
 								if(isPositionsThereBoolean) {
 									//showTrainingFeatures(eN,(pN+1),choosenParam); // Показываем информацию о следующем элементе
@@ -133,26 +141,26 @@ $('#go').one('click',function(){
 
 							}
 							*/
-		console.info('Статус текущего элемента: '+obj_element(eN, choosenParam).attr('status'));
-		console.info('Необходимый статус элемента (pN): '+str_pos_whatever(eN, 'state',pN,choosenParam));
-		if (obj_element(eN, choosenParam).attr('status') == str_pos_whatever(eN, 'state',pN,choosenParam)) {
+							console.info('Статус текущего элемента: '+obj_element(eN, choosenParam).attr('status'));
+							console.info('Необходимый статус элемента (pN): '+str_pos_whatever(eN, 'state',pN,choosenParam));
+							if (obj_element(eN, choosenParam).attr('status') == str_pos_whatever(eN, 'state',pN,choosenParam)) {
 
-			if (isPositionsThere(eN,choosenParam)) {
+								if (isPositionsThere(eN,choosenParam)) {
 
-				aN = 1;
-				detectMultiply();
-				for (var i = 0; i < positionsObj(eN,pN,choosenParam)-2; i++) {
-					showActions(eN,pN,aN,choosenParam);
-					//console.info(posCount(thisEx[thisExId]['el'+eN].positions['position_'+pN])+'; if(choosenParam): '+positionsObj(eN,pN,choosenParam));
-					aN++
-				};
-				scaleAlive(str_whatever(eN, 'onSide',choosenParam),str_whatever(eN, 'type',choosenParam),str_whatever(eN, 'num',choosenParam),str_pos_whatever(eN, 'state',pN,choosenParam));
-				pN++;
-			} else {
-				eN++;
-				detectMultiply();
-			}
-		}
+									aN = 1;
+									detectMultiply();
+									for (var i = 0; i < positionsObj(eN,pN,choosenParam)-2; i++) {
+										showActions(eN,pN,aN,choosenParam);
+										//console.info(posCount(thisEx[thisExId]['el'+eN].positions['position_'+pN])+'; if(choosenParam): '+positionsObj(eN,pN,choosenParam));
+										aN++
+									};
+									scaleAlive(str_whatever(eN, 'onSide',choosenParam),str_whatever(eN, 'type',choosenParam),str_whatever(eN, 'num',choosenParam),str_pos_whatever(eN, 'state',pN,choosenParam));
+									pN++;
+								} else {
+									eN++;
+									detectMultiply();
+								}
+							}
 							showTrainingFeatures(eN,pN,choosenParam); // Показываем информацию о следующем элементе
 
 						} else {
@@ -197,6 +205,7 @@ $('#stack7_block1_front .element[type="toggler"][num="4"]').on('click', function
 
 
 
+
 function hideAndRemoveAllHints() {
 	$('section, #bx_pager a, .element').removeClass('shadow');
 	$('.element').find('.hint').remove();
@@ -215,7 +224,7 @@ $(window).resize(function(){
 });
 $(window).scroll(function(){
 	screenTop = $(this).scrollTop();
-	screenBottom = screenTop + screenHeight;
+	screenBottom = screenTop + screenHeight - 60;
 	//console.info(screenTop);
 });
 function focusOnElement(parameter){
@@ -258,7 +267,7 @@ function focusOnElement(parameter){
 
 	});
 
-	console.info(isPositionsThereBoolean+' '+pN+' '+posCount(thisEx[thisExId]['el'+eN].positions));
+//	console.info(isPositionsThereBoolean+' '+pN+' '+posCount(thisEx[thisExId]['el'+eN].positions));
 	detectMultiplyPrev();
 	if (
 		(str_whatever((eN-1),'inStack',choosenParamPrev)) 
@@ -283,7 +292,12 @@ function showhint(eN, choosenParam) {
 	var stack = nameOfStack(str_whatever(eN, 'inStack'));
 
 	$('#showhint span').html('Стойка: <b class="active" id="goToStack">'+stack+'</b>, Блок: <b id="goToBlock">'+block+'</b>');
-
+	
+		setTimeout(function(){
+			if($('#stack6_block3_front .element[type="knob"][num="14"]').hasClass('shadow')) {
+				$('#stack6_block3_front .door').addClass('opened');
+			}
+		}, 1000)
 
 	if(choosenParam) {
 		$('#bx-pager a').not($('.'+str_whatever(eN, 'inStack', choosenParam))).addClass('opacity'); // minimap-stack

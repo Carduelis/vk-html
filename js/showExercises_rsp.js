@@ -206,7 +206,6 @@ $('#stack7_block1_front .element[type="toggler"][num="4"]').on('click', function
 
 
 
-
 function hideAndRemoveAllHints() {
 	$('section, #bx_pager a, .element').removeClass('shadow');
 	$('.element').find('.hint').remove();
@@ -293,7 +292,12 @@ function showhint(eN, choosenParam) {
 	var stack = nameOfStack(str_whatever(eN, 'inStack'));
 
 	$('#showhint span').html('Стойка: <b class="active" id="goToStack">'+stack+'</b>, Блок: <b id="goToBlock">'+block+'</b>');
-
+	
+		setTimeout(function(){
+			if($('#stack6_block3_front .element[type="knob"][num="14"]').hasClass('shadow')) {
+				$('#stack6_block3_front .door').addClass('opened');
+			}
+		}, 1000)
 
 	if(choosenParam) {
 		$('#bx-pager a').not($('.'+str_whatever(eN, 'inStack', choosenParam))).addClass('opacity'); // minimap-stack

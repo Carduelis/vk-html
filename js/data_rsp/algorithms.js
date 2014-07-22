@@ -495,25 +495,41 @@ var exercisesContainer = {
 			},
 		},
 		el10 : {
-			shift : '1', //проверить
-		},
-		el11 : {
-			click : '9',
-			current : {
-				inStack : 'stack7',
-				inBlock : 'stack7_block1',
-				onSide : 'stack7_block1_front',
-				num : '46',
-				type : 'toggler',
+			multiply: 'fiders',
+			fider1 : {
+				click : '7',
+				current : {
+					inStack : 'stack7',
+					inBlock : 'stack7_block1',
+					onSide : 'stack7_block1_front',
+					num : '13',
+					type : 'toggler',
+				},
+				positions : {
+					position_1 : {
+						state : '3',
+						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ДИСПЕТЧЕРСКИЙ в положение выбранного фидера',
+					},
+				},
 			},
-			positions : {
-				position_1 : {
-					state : '1',
-					description : 'Установите переключатель ВЕНТИЛЯТОРЫ в положение ИНДИКАТОРЫ',
+			fider2 : {
+				click : '6',
+				current : {
+					inStack : 'stack7',
+					inBlock : 'stack7_block1',
+					onSide : 'stack7_block1_front',
+					num : '13',
+					type : 'toggler',
+				},
+				positions : {
+					position_1 : {
+						state : '1',
+						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ДИСПЕТЧЕРСКИЙ в положение выбранного фидера',
+					},
 				},
 			},
 		},
-		el12 : {
+		el11 : {
 			click : '10',
 			current : {
 				inStack : 'stack7',
@@ -526,6 +542,22 @@ var exercisesContainer = {
 				position_1 : {
 					state : '1',
 					description : 'Установите переключатель ВЕНТИЛЯТОРЫ в положение ПРЛ',
+				},
+			},
+		},
+		el12 : {
+			click : '10',
+			current : {
+				inStack : 'stack7',
+				inBlock : 'stack7_block1',
+				onSide : 'stack7_block1_front',
+				num : '46',
+				type : 'toggler',
+			},
+			positions : {
+				position_1 : {
+					state : '1',
+					description : 'Установите переключатель ВЕНТИЛЯТОРЫ в положение ИНДИКАТОРЫ',
 				},
 			},
 		},
@@ -1870,7 +1902,7 @@ var exercisesContainer = {
 				},
 				positions : {
 					position_1 : {
-						state : '1',
+						state : '4',
 						description : 'Отрегулируйте ток кристалла потенциометром так, чтобы ток был в зеленой зоне',
 						action_1 : {
 							inStack : 'stack1',
@@ -1926,9 +1958,9 @@ var exercisesContainer = {
 			out_red_zone : {
 				click : '31',
 				current : {
-					inStack : 'stack4',
-					inBlock : 'stack4_block1',
-					onSide : 'stack4_block1_front',
+					inStack : 'stack1',
+					inBlock : 'stack1_block4',
+					onSide : 'stack1_block4_front',
 					num : '13',
 					type : 'knob',
 				},

@@ -2020,8 +2020,54 @@ ex6 : {
 			},
 		},
 	},
+<<<<<<< HEAD
 	el3 : {
 		click : '3',
+=======
+	el4 : {
+		click : '4',
+		current : {
+			inStack : 'stack0',
+			inBlock : 'stack0_block14',
+			onSide : 'stack0_block14_front',
+			num : '9',
+			type : 'toggler',
+		},
+		positions : {
+			position_1 : {
+				state : '1',
+				description : 'Установите переключатель КРС-УРОВЕНЬ в положение УРОВЕНЬ',
+			},
+			position_2 : {
+				state : '0',
+				description : 'Установите переключатель КРС-УРОВЕНЬ в положение КРС, снимите показание КРС по цифровым индикаторам по каналам контроля «0» и «S».',
+			},
+		},
+		defaultPosition : '0',
+	},	
+},
+ex4 : {
+
+	nameOfExercise : '“Установка и контроль положения зоны курса, установка порогов срабатывания выдачи сигналов АВАРИЯ',
+	el1 : {
+		click : '1',
+		current : {
+			inStack : 'stack0',
+			inBlock : 'stack0_block2',
+			onSide : 'stack0_block2_front',
+			num : '1',
+			type : 'rotator',
+		},
+		positions : {
+			position_1 : {
+				state : '5',
+				description : 'Установите ручку крутизны на 50 делений',
+			},
+		},
+	},
+	el2 : {
+		click : '2',
+>>>>>>> origin/master
 		current : {
 			inStack : 'stack0',
 			inBlock : 'stack0_block1',
@@ -2137,8 +2183,17 @@ ex7 : {
 			},
 		},
 	},
+<<<<<<< HEAD
 	el2 : {
 		click : '2',
+=======
+},
+ex5 : {
+
+	nameOfExercise : 'Проверка порога срабатывания контроля уровня мощности на выходе УМ КГ',
+	el1 : {
+		click : '1',
+>>>>>>> origin/master
 		current : {
 			inStack : 'stack0',
 			inBlock : 'stack0_block4',
@@ -2420,8 +2475,12 @@ ex8 : {
 	},
 },
 
+<<<<<<< HEAD
 ex9 : {
 	nameOfExercise : 'Проверка выдачи сигнала «Авария» от ухода нуля зоны и переключения с задержкой времени на резервный комплект',
+=======
+	nameOfExercise : 'Проверка выдачи сигнала "авария" от ухода нуля и переключение с задержкой времени на резервный комплект',
+>>>>>>> origin/master
 	el1 : {
 		click : '1',
 		current : {

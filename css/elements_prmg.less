@@ -130,6 +130,7 @@ footer {
 		.element(@el*15);
 		.body {
 			background-image: url('@{path-to-elements}/up.png');
+			.transitions_off();
 		}
 		&[defaultposition="1"], 
 		&[status="1"] {
@@ -277,6 +278,16 @@ footer {
 			}
 			&[status="on"] .body {
 				background-image: url('@{path-to-elements}/toggle_button/on.png');
+			}
+		}
+		&[view_special="big"] {
+			.element(@el*30);
+			.body {
+				background-image: url('@{path-to-elements}/big_btn_off.png');
+			}
+
+			&[status="on"] .body {
+				background-image: url('@{path-to-elements}/big_btn_on.png');
 			}
 		}
 	}

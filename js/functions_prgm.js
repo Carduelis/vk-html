@@ -46,7 +46,7 @@ $('#hidePopUp').on('click', function(){
 
 
 
-$('#container section').on('click', function(){
+$('#container section').not('#min_stack0_block26').on('click', function(){
   $('#hidePopUp').fadeIn();
   var sectionId = $(this).attr('id').substr(4);
   console.info(sectionId);
@@ -73,6 +73,11 @@ $('section i').on('click',function(){
   $(this).parent().hide();
   $(this).parent().parent().children('div[side="front"]').fadeIn();
 });
+
+$('.card-block').on('click', function(e){
+  if (e.target !== this) return;
+  $(this).toggleClass('opened');
+})
 
 });
 

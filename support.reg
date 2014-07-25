@@ -7,4 +7,4 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\rsp\shell\open]
 @=""
 [HKEY_CLASSES_ROOT\rsp\shell\open\command]
-@="C:\\GitHub\\vk-html\\RSP\\RSP.exe"
+@="Z:\\home\\192.168.8.150\\www\\git\\vk-html\\RSP\\RSP.exe"

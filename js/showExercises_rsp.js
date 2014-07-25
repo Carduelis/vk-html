@@ -7,7 +7,7 @@ var aN = 1;
 var isPositionsThereBoolean = true;
 
 $('#go').one('click',function(){
-	$('.header').append('<li class="btn"><a><i>Упражнение: </i>'+exercisesContainer[thisExId].nameOfExercise+'</a></li>');
+	$('.header').append('<li id="nameOfExercise" class="btn"><a><i>Упражнение: </i>'+exercisesContainer[thisExId].nameOfExercise+'</a></li>');
 
 	if (helloText[thisExId]) {
 		alert(helloText[thisExId]);

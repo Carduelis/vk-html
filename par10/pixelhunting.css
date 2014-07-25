@@ -1,0 +1,931 @@
+.container-level1#block203 .control {
+	margin-left: 15px;
+	margin-top: 12px;
+}
+#image201 {width: 93%;}
+#image202 {width: 93%;}
+.scale201 {left: 290px; top: 50px; width: 8.5em; height: 8.5em;}
+.scale202 {left: 421px; top: 37px; }
+.scale203 {left: 209px; top: 40px; }
+.scale204-1 {left: 230px; top: 25px; }
+.scale204-2 {left: 407px; top: 25px; }
+.scale205 {left: 184px; top: 28px; }
+.scale301 {left: 65px; top: 260px; }
+.scale200 {left: 167px;top: 88px;}
+.scale999 {left: 167px;top: 88px;}
+.scale501 {left: 542px;
+top: 28px;}
+
+#block200 [type="lamp"][data="num0"]{
+left: 180px;
+top: 63px;
+}
+#block200 [type="lamp"][data="num1"]{
+left: 240px;
+top: 63px;
+}
+#block200 [type="lamp"][data="num2"]{
+left: 485px;
+top: 308px;
+}
+#block200 [type="lamp"][data="num3"]{
+left: 547px;
+top: 308px;
+}
+#block200 [type="lamp"][data="num4"]{
+left: 609px;
+top: 308px;
+}
+#block200 [type="lamp"][data="num5"]{
+left: 673px;
+top: 308px;
+}
+#block200 [type="lamp"][data="num6"]{
+left: 734px;
+top: 308px;
+}
+
+#block200 [type="knob"][data="num0"]{
+left: 296px;
+top: 117px;
+}
+#block200 [type="knob"][data="num1"]{
+left: 172px;
+top: 206px;
+}
+#block200 [type="knob"][data="num2"]{
+left: 239px;
+top: 200px;
+}
+#block200 [type="knob"][data="num3"]{
+left: 239px;
+top: 272px;
+}
+#block200 [type="knob"][data="num4"]{
+left: 312px;
+top: 272px;
+}
+#block200 [type="knob"][data="num5"]{
+left: 314px;
+top: 345px;
+}
+#block200 [type="knob"][data="num6"]{
+left: 404px;
+top: 250px;
+}
+#block200 [type="knob"][data="num7"]{
+left: 478px;
+top: 250px;
+}
+#block200 [type="knob"][data="num8"]{
+left: 556px;
+top: 250px;
+}
+#block200 [type="knob"][data="num9"]{
+left: 637px;
+top: 250px;
+}
+#block200 [type="knob"][data="num10"]{
+left: 709px;
+top: 250px;
+}
+#block200 [type="knob"][data="num11"]{
+left: 779px;
+top: 250px;
+}
+#block200 [type="knob"][data="num12"]{
+left: 472px;
+top: 355px;
+}
+#block200 [type="knob"][data="num13"]{
+left: 534px;
+top: 355px;
+}
+#block200 [type="knob"][data="num14"]{
+left: 598px;
+top: 355px;
+}
+#block200 [type="knob"][data="num15"]{
+left: 660px;
+top: 355px;
+}
+#block200 [type="knob"][data="num16"]{
+left: 723px;
+top: 355px;
+}
+#block200 [type="toggler"][data="num0"]{
+left: 421px;
+top: 365px;
+}
+
+/* Элементы на БПД-1*/
+#block200 [type="lamp"][data="num7"]{
+left: 340px;
+top: -120px;
+}
+#block200 [type="lamp"][data="num8"]{
+left: 407px;
+top: -120px;
+}
+#block200 [type="lamp"][data="num9"]{
+left: 458px;
+top: -120px;
+}
+#block200 [type="lamp"][data="num10"]{
+left: 517px;
+top: -120px;
+}
+#block200 [type="lamp"][data="num11"]{
+left: 380px;
+top: -44px;
+}
+#block200 [type="toggler"][data="num1"]{
+left: 446px;
+top: -44px;
+}
+#block200 [type="knob"][data="num17"]{
+left: 629px;
+top: -115px;
+}
+
+
+
+
+#block999 [type="lamp"][data="num0"]{
+left: 180px;
+top: 63px;
+}
+#block999 [type="lamp"][data="num1"]{
+left: 240px;
+top: 63px;
+}
+#block999 [type="lamp"][data="num2"]{
+left: 485px;
+top: 308px;
+}
+#block999 [type="lamp"][data="num3"]{
+left: 547px;
+top: 308px;
+}
+#block999 [type="lamp"][data="num4"]{
+left: 609px;
+top: 308px;
+}
+#block999 [type="lamp"][data="num5"]{
+left: 673px;
+top: 308px;
+}
+#block999 [type="lamp"][data="num6"]{
+left: 734px;
+top: 308px;
+}
+
+#block999 [type="knob"][data="num0"]{
+left: 296px;
+top: 117px;
+}
+#block999 [type="knob"][data="num1"]{
+left: 172px;
+top: 206px;
+}
+#block999 [type="knob"][data="num2"]{
+left: 239px;
+top: 200px;
+}
+#block999 [type="knob"][data="num3"]{
+left: 239px;
+top: 272px;
+}
+#block999 [type="knob"][data="num4"]{
+left: 312px;
+top: 272px;
+}
+#block999 [type="knob"][data="num5"]{
+left: 314px;
+top: 345px;
+}
+#block999 [type="knob"][data="num6"]{
+left: 404px;
+top: 250px;
+}
+#block999 [type="knob"][data="num7"]{
+left: 478px;
+top: 250px;
+}
+#block999 [type="knob"][data="num8"]{
+left: 556px;
+top: 250px;
+}
+#block999 [type="knob"][data="num9"]{
+left: 637px;
+top: 250px;
+}
+#block999 [type="knob"][data="num10"]{
+left: 709px;
+top: 250px;
+}
+#block999 [type="knob"][data="num11"]{
+left: 779px;
+top: 250px;
+}
+#block999 [type="knob"][data="num12"]{
+left: 472px;
+top: 355px;
+}
+#block999 [type="knob"][data="num13"]{
+left: 534px;
+top: 355px;
+}
+#block999 [type="knob"][data="num14"]{
+left: 598px;
+top: 355px;
+}
+#block999 [type="knob"][data="num15"]{
+left: 660px;
+top: 355px;
+}
+#block999 [type="knob"][data="num16"]{
+left: 723px;
+top: 355px;
+}
+#block999 [type="toggler"][data="num0"]{
+left: 421px;
+top: 365px;
+}
+
+/* Элементы на БПД-1*/
+#block999 [type="lamp"][data="num7"]{
+left: 340px;
+top: -120px;
+}
+#block999 [type="lamp"][data="num8"]{
+left: 407px;
+top: -120px;
+}
+#block999 [type="lamp"][data="num9"]{
+left: 458px;
+top: -120px;
+}
+#block999 [type="lamp"][data="num10"]{
+left: 517px;
+top: -120px;
+}
+#block999 [type="lamp"][data="num11"]{
+left: 380px;
+top: -44px;
+}
+#block999 [type="toggler"][data="num1"]{
+left: 446px;
+top: -44px;
+}
+#block999 [type="knob"][data="num17"]{
+left: 629px;
+top: -115px;
+}
+#block999 [type="knob"][data="num18"]{
+left: 241px;
+top: 345px;
+}
+
+
+#block201 [type="handler"][data="num0"]{
+left: 441px;
+top: 577px;
+}
+#block201 [type="toggler"][data="num1"]{
+left: 481px;
+top: 577px;
+}
+#block201 [type="handler"][data="num2"]{
+left: 522px;
+top: 577px;
+}
+#block201 [type="toggler"][data="num3"]{
+left: 456px;
+top: 392px
+}
+#block201 [type="toggler"][data="num4"]{
+left: 454px;
+top: 516px;
+}
+#block201 [type="toggler"][data="num5"]{
+left: 800px;
+top: 83px;
+}
+
+#block201 [type="rotator"][data="num0"]{
+left: 503px;
+top: 67px;
+width: 2.65em;
+height: 2.65em;
+}
+#block201 [type="rotator"][data="num1"]{
+left: 656px;
+top: 67px;
+width: 2.65em;
+height: 2.65em;
+}
+#block201 [type="rotator"][data="num2"]{
+left: 744px;
+top: 67px;
+width: 2.65em;
+height: 2.65em;
+}
+#block201 [type="rotator"][data="num3"]{
+left: 166px;
+top: 287px;
+}
+#block201 [type="rotator"][data="num4"]{
+left: 666px;
+top: 487px;
+}
+#block201 [type="knob"][data="num0"]{
+left: 650px;
+top: 212px;
+}
+
+#block202 [type="rotator"][data="num0"]{
+left: 110px;
+top: 60px;
+}
+#block202 [type="rotator"][data="num1"]{
+left: 170px;
+top: 60px;
+}
+#block202 [type="rotator"][data="num2"]{
+left: 226px;
+top: 60px;
+}
+#block202 [type="rotator"][data="num3"]{
+left: 838px;
+top: 140px;
+}
+#block202 [type="rotator"][data="num4"]{
+left: 838px;
+top: 205px;
+}
+#block202 [type="rotator"][data="num5"]{
+left: 838px;
+top: 300px;
+}
+#block202 [type="rotator"][data="num6"]{
+left: 180px;
+top: 141px;
+}
+#block202 [type="rotator"][data="num7"]{
+left: 636px;
+top: 141px;
+}
+
+#block202 [type="lamp"][data="num0"]{
+left: 105px;
+top: 258px;
+}
+#block202 [type="lamp"][data="num1"]{
+left: 840px;
+top: 50px;
+}
+
+#block202 [type="toggler"][data="num0"]{
+left: 780px;
+top: 50px;
+}
+#block202 [type="toggler"][data="num1"]{
+left: 820px;
+top: 262px;
+}
+
+#block202 [type="knob"][data="num0"]{
+left: 353px;
+top: 73px;
+}
+#block202 [type="knob"][data="num1"]{
+left: 411px;
+top: 166px;
+}
+
+
+
+#block203 [type="toggler"][data="num0"]{
+left: 135px;
+top: 77px;
+}
+#block203 [type="toggler"][data="num1"]{
+left: 163px;
+top: 77px;
+}
+#block203 [type="toggler"][data="num2"]{
+left: 330px;
+top: 130px;
+}
+#block203 [type="toggler"][data="num3"]{
+left: 64px;
+top: 180px;
+}
+#block203 [type="toggler"][data="num4"]{
+left: 154px;
+top: 180px;
+}
+#block203 [type="toggler"][data="num5"]{
+left: 112px;
+top: 245px;
+}
+
+#block203 [type="lamp"][data="num0"]{
+left: 151px;
+top: 52px;
+}
+#block203 [type="lamp"][data="num1"]{
+left: 80px;
+top: 146px;
+}
+
+#block203 [type="knob"][data="num0"]{
+left: 317px;
+top: 54px;
+}
+#block203 [type="knob"][data="num1"]{
+left: 314px;
+top: 233px;
+}
+
+#block203 [type="rotator"][data="num0"]{
+left: 154px;
+top: 245px;
+}
+#block203 [type="rotator"][data="num1"]{
+left: 204px;
+top: 245px;
+}
+#block203 [type="rotator"][data="num2"]{
+left: 65px;
+top: 310px;
+}
+#block203 [type="rotator"][data="num3"]{
+left: 112px;
+top: 310px;
+}
+
+#block2030 [type="toggler"][data="num0"] {
+left: 60px;
+top: 68px;
+z-index: 9999;
+width: 3em;
+height: 3em;
+}
+
+
+#block204 [type="lamp"][data="num0"]{
+left: 105px;
+top: 70px;
+}
+#block204 [type="lamp"][data="num1"]{
+left: 114px;
+top: 155px;
+}
+#block204 [type="lamp"][data="num2"]{
+left: 108px;
+top: 271px;
+}
+
+#block204 [type="rotator"][data="num0"]{
+left: 711px;
+top: 155px;
+}
+
+
+#block205 [type="toggler"][data="num0"]{
+left: 113px;
+top: 144px;
+}
+
+#block205 [type="lamp"][data="num0"]{
+left: 302px;
+top: 50px;
+}
+#block205 [type="lamp"][data="num1"]{
+left: 362px;
+top: 50px;
+}
+#block205 [type="lamp"][data="num2"]{
+left: 302px;
+top: 97px;
+}
+#block205 [type="lamp"][data="num3"]{
+left: 362px;
+top: 97px;
+}
+
+#block205 [type="knob"][data="num0"]{
+left: 211px;
+top: 164px;
+}
+#block205 [type="knob"][data="num1"]{
+left: 346px;
+top: 167px;
+}
+#block205 [type="knob"][data="num2"]{
+left: 75px;
+top: 262px;
+}
+#block205 [type="knob"][data="num3"]{
+left: 143px;
+top: 262px;
+}
+#block205 [type="knob"][data="num4"]{
+left: 209px;
+top: 262px;
+}
+#block205 [type="knob"][data="num5"]{
+left: 276px;
+top: 262px;
+}
+#block205 [type="knob"][data="num6"]{
+left: 343px;
+top: 262px;
+}
+
+
+
+
+#block301 [type="lamp"][data="num0"]{
+left: 67px;
+top: 38px;
+}
+#block301 [type="lamp"][data="num1"]{
+left: 121px;
+top: 38px;
+}
+#block301 [type="lamp"][data="num2"]{
+left: 174px;
+top: 38px;
+}
+#block301 [type="lamp"][data="num3"]{
+left: 225px;
+top: 38px;
+}
+#block301 [type="lamp"][data="num4"]{
+left: 277px;
+top: 38px;
+}
+#block301 [type="lamp"][data="num5"]{
+left: 326px;
+top: 38px;
+}
+#block301 [type="lamp"][data="num6"]{
+left: 377px;
+top: 38px;
+}
+#block301 [type="lamp"][data="num7"]{
+left: 174px;
+top: 86px;
+}
+#block301 [type="lamp"][data="num8"]{
+left: 277px;
+top: 86px;
+}
+#block301 [type="lamp"][data="num9"]{
+left: 72px;
+top: 148px;
+}
+#block301 [type="lamp"][data="num10"]{
+left: 109px;
+top: 148px;
+}
+#block301 [type="lamp"][data="num11"]{
+left: 147px;
+top: 148px;
+}
+#block301 [type="lamp"][data="num12"]{
+left: 185px;
+top: 146px;
+}
+#block301 [type="lamp"][data="num13"]{
+left: 224px;
+top: 146px;
+}
+#block301 [type="lamp"][data="num14"]{
+left: 263px;
+top: 146px;
+}
+#block301 [type="lamp"][data="num15"]{
+left: 300px;
+top: 148px;
+}
+#block301 [type="lamp"][data="num16"]{
+left: 338px;
+top: 148px;
+}
+#block301 [type="lamp"][data="num17"]{
+left: 378px;
+top: 148px;
+}
+#block301 [type="lamp"][data="num18"]{
+left: 186px;
+top: 218px;
+}
+#block301 [type="lamp"][data="num19"]{
+left: 262px;
+top: 218px;
+}
+#block301 [type="lamp"][data="num20"]{
+left: 196px;
+top: 250px;
+}
+#block301 [type="lamp"][data="num21"]{
+left: 253px;
+top: 250px;
+}
+
+#block301 [type="knob"][data="num0"]{
+left: 105px;
+top: 80px;
+}
+#block301 [type="knob"][data="num1"]{
+left: 323px;
+top: 80px;
+}
+#block301 [type="knob"][data="num2"]{
+left: 128px;
+top: 202px;
+}
+#block301 [type="knob"][data="num3"]{
+left: 298px;
+top: 202px;
+}
+#block301 [type="knob"][data="num4"]{
+left: 213px;
+top: 292px;
+}
+
+#block301 [type="rotator"][data="num0"]{
+left: 68px;
+top: 66px;
+}
+#block301 [type="rotator"][data="num1"]{
+left: 68px;
+top: 104px;
+}
+#block301 [type="rotator"][data="num2"]{
+left: 378px;
+top: 66px;
+}
+#block301 [type="rotator"][data="num3"]{
+left: 374px;
+top: 104px;
+}
+
+#block301 [type="toggler"][data="num0"]{
+left: 222px;
+top: 90px;
+}
+#block301 [type="toggler"][data="num1"]{
+left: 223px;
+top: 194px;
+}
+#block301 [type="toggler"][data="num2"]{
+left: 73px;
+top: 200px;
+}
+#block301 [type="toggler"][data="num3"]{
+left: 379px;
+top: 200px;
+}
+#block301 [type="toggler"][data="num4"]{
+left: 223px;
+top: 227px;
+}
+
+
+#block301 [type="toggler"][data="num5"]{
+left: 175px;
+top: 262px;
+}
+#block301 [type="toggler"][data="num6"]{
+left: 175px;
+top: 351px;
+}
+#block301 [type="toggler"][data="num7"]{
+left: 175px;
+top: 280px;
+}
+#block301 [type="toggler"][data="num8"]{
+left: 175px;
+top: 289px;
+}
+#block301 [type="toggler"][data="num9"]{
+left: 175px;
+top: 298px;
+}
+#block301 [type="toggler"][data="num10"]{
+left: 175px;
+top: 307px;
+}
+#block301 [type="toggler"][data="num11"]{
+left: 175px;
+top: 316px;
+}
+#block301 [type="toggler"][data="num12"]{
+left: 175px;
+top: 325px;
+}
+#block301 [type="toggler"][data="num13"]{
+left: 175px;
+top: 334px;
+}
+#block301 [type="toggler"][data="num14"]{
+left: 175px;
+top: 343px;
+}
+
+
+#block501 [type="lamp"][data="num0"]{
+left: 486px;
+top: 100px;
+}
+#block501 [type="lamp"][data="num1"]{
+left: 275px;
+top: 230px;
+}
+#block501 [type="lamp"][data="num2"]{
+left: 360px;
+top: 230px;
+}
+#block501 [type="lamp"][data="num3"]{
+left: 250px;
+top: 315px;
+}
+#block501 [type="lamp"][data="num4"]{
+left: 305px;
+top: 315px;
+}
+#block501 [type="lamp"][data="num5"]{
+left: 362px;
+top: 315px;
+}
+#block501 [type="lamp"][data="num6"]{
+left: 476px;
+top: 315px;
+}
+#block501 [type="lamp"][data="num7"]{
+left: 592px;
+top: 315px;
+}
+#block501 [type="lamp"][data="num8"]{
+left: 650px;
+top: 315px;
+}
+#block501 [type="lamp"][data="num9"]{
+left: 700px;
+top: 315px;
+}
+#block501 [type="lamp"][data="num10"]{
+left: 476px;
+top: 378px;
+}
+#block501 [type="lamp"][data="num11"]{
+left: 250px;
+top: 411px;
+}
+#block501 [type="lamp"][data="num12"]{
+left: 305px;
+top: 411px;
+}
+#block501 [type="lamp"][data="num13"]{
+left: 362px;
+top: 411px;
+}
+#block501 [type="lamp"][data="num14"]{
+left: 592px;
+top: 411px;
+}
+#block501 [type="lamp"][data="num15"]{
+left: 650px;
+top: 411px;
+}
+#block501 [type="lamp"][data="num16"]{
+left: 700px;
+top: 411px;
+}
+#block501 [type="lamp"][data="num17"]{
+left: 280px;
+top: 480px;
+}
+#block501 [type="lamp"][data="num18"]{
+left: 340px;
+top: 490px;
+}
+#block501 [type="lamp"][data="num19"]{
+left: 277px;
+top: 650px;
+}
+#block501 [type="lamp"][data="num20"]{
+left: 334px;
+top: 650px;
+}
+#block501 [type="lamp"][data="num21"]{
+left: 630px;
+top: 653px;
+}
+
+#block501 [type="knob"][data="num0"]{
+left: 647px;
+top: 224px;
+}
+#block501 [type="knob"][data="num1"]{
+left: 543px;
+top: 667px;
+}
+#block501 [type="knob"][data="num2"]{
+left: 644px;
+top: 695px;
+}
+
+#block501 [type="toggler"][data="num0"]{
+left: 408px;
+top: 310px;
+}
+#block501 [type="toggler"][data="num1"]{
+left: 522px;
+top: 310px;
+}
+#block501 [type="toggler"][data="num2"]{
+left: 408px;
+top: 378px;
+}
+#block501 [type="toggler"][data="num3"]{
+left: 522px;
+top: 378px;
+}
+#block501 [type="toggler"][data="num4"]{
+left: 672px;
+top: 576px;
+}
+#block501 [type="toggler"][data="num5"]{
+left: 713px;
+top: 576px;
+}
+
+
+
+
+#block2050 [type="toggler"][data="num0"]{
+	left: 50px;
+	top: 50px;
+}
+#block2050 [type="knob"][data="num0"]{
+	left: 54px;
+	top: 42px;
+}
+#block2050 [type="knob"][data="num1"]{
+	left: 144px;
+	top: 42px;
+}
+#block2050 [type="knob"][data="num2"]{
+	left: 235px;
+	top: 42px;
+}
+#block2050 [type="knob"][data="num3"]{
+	left: 320px;
+	top: 42px;
+}
+#block2050 [type="knob"][data="num4"]{
+	left: 54px;
+	top: 133px;
+}
+#block2050 [type="knob"][data="num5"]{
+	left: 144px;
+	top: 133px;
+}
+#block2050 [type="knob"][data="num6"]{
+	left: 235px;
+	top: 133px;
+}
+#block2050 [type="knob"][data="num7"]{
+	left: 320px;
+	top: 133px;
+}
+#block2050 [type="knob"][data="num8"]{
+	left: 54px;
+	top: 220px;
+}
+#block2050 [type="knob"][data="num9"]{
+	left: 144px;
+	top: 220px;
+}
+#block2050 [type="knob"][data="num10"]{
+	left: 235px;
+	top: 220px;
+}
+#block2050 [type="knob"][data="num11"]{
+	left: 320px;
+	top: 220px;
+}
+#block2050 [type="knob"][data="num12"]{
+	left: 110px;
+	top: 294px;
+}
+#block2050 [type="knob"][data="num13"]{
+	left: 240px;
+	top: 294px;
+}

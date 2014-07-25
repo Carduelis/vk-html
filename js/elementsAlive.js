@@ -3,7 +3,6 @@
 // Здесь описываются действия с элементами
 // ============================================
 function scaleAlive(scaleAliveBlockId,scaleAliveElementType,scaleAliveElementNum,scaleAliveElementStatus) {
-		
 		for(var i in scaleRelations) {
 			//controller = $('#'+scaleRelations[i].control.block+' .element[type="'+scaleRelations[i].control.type+'"][num="'+scaleRelations[i].control.num+'"]');
 			//controllerClicker = controller.children('.control').children('a');
@@ -49,15 +48,29 @@ function scaleAlive(scaleAliveBlockId,scaleAliveElementType,scaleAliveElementNum
 
 		return console.info('scaleAlive')
 }
+
+var refreshStatus = {
+	make: function () {
+		console.info('Обновили status. status='+status);
+		status = $(this).attr('status');
+	}
+}
+
+function myStopFunction() {
+    clearInterval(myVar);
+}
+
 $(document).ready(function(){
+	$('.element').each(function(){
 
+	var status;
+	//myVar = setInterval(function(){myTimer()}, 10000);
 
-$('.element').each(function(){
-	var status = 0;
 	var element = $(this);
 	var sectionId = $(this).parent().attr('id');
 	var clicker = element.find('.click');
-	var body = element.children('.body')
+	var body = element.children('.body');
+	//console.info(sectionId+' '+status);
 	element.find('a').attr('href','javascript:void(0);');
 
 	var positions = element.attr('positions');
@@ -90,30 +103,34 @@ $('.element').each(function(){
 		body.css('transform','rotate('+rotate+'deg)');
 
 		element.find('.cw').on('click', function(){	
-
-			if (status < positions-1) {
-				status++;
-				element.attr('status',status);
-				var rotate = step*(1-positions+2*status);
-				body.css('transform','rotate('+rotate+'deg)');
-				scaleAlive(sectionId,element.attr('type'),element.attr('num'),status);
-			}
-	        if (element.attr('view2') == "yes") {
-	        	element.children('.overlay').html('<span class="counter">'+status+'</span>')
-	        }
+				status = element.attr('status');
+				if (status) {} else {
+					status = positions/2;
+				}
+				if (status < positions-1) {
+					status++;
+					element.attr('status',status);
+					var rotate = step*(1-positions+2*status);
+					body.css('transform','rotate('+rotate+'deg)');
+					scaleAlive(sectionId,element.attr('type'),element.attr('num'),status);
+				}
+		        if (element.attr('view2') == "yes") {
+		        	element.children('.overlay').html('<span class="counter">'+status+'</span>')
+		        }
 		});
 
 		element.find('.ccw').on('click', function(){	
-			if (status > 0) {
-				status--;	
-				element.attr('status',status);
-				var rotate = step*(1-positions+2*status);
-				body.css('transform','rotate('+rotate+'deg)');
-				scaleAlive(sectionId,element.attr('type'),element.attr('num'),status);
-			}
-	        if (element.attr('view2') == "yes") {
-	        	element.children('.overlay').html('<span class="counter">'+status+'</span>')
-	        }
+				status = element.attr('status');
+				if (status > 0) {
+					status--;	
+					element.attr('status',status);
+					var rotate = step*(1-positions+2*status);
+					body.css('transform','rotate('+rotate+'deg)');
+					scaleAlive(sectionId,element.attr('type'),element.attr('num'),status);
+				}
+		        if (element.attr('view2') == "yes") {
+		        	element.children('.overlay').html('<span class="counter">'+status+'</span>')
+		        }
 		});
         if (element.attr('view2') == "yes") {
         	element.children('.overlay').html('<span class="counter">'+status+'</span>')
@@ -121,7 +138,6 @@ $('.element').each(function(){
 	}
 	if (element.attr('type') == 'toggler') {
 		if (element.attr('toggles') == '4') {
-
 			clicker.on('click',function(){
 				status++
 				if (status == 4) {
@@ -132,9 +148,19 @@ $('.element').each(function(){
 
 		} else {
 			clicker.on('click',function(){
-				if (status) status = 0
-				else status = 1
-				element.attr('status',status)
+				status = element.attr('status');
+				console.info('clicker on click');
+				if ((status == '1') || (status == 1)) {
+					console.info('status = 1');
+					element.attr('status','0');
+					status = 0;
+					console.info('status: '+status);
+				} else {
+					console.info('status = 0');
+					element.attr('status','1');
+					status = 1;
+					console.info('status: '+status);
+				}
 			});
 		}
 		if (element.attr('view') == 'rotate') {
@@ -201,7 +227,8 @@ $('.element').each(function(){
 	if (
 			(element.attr('type') == 'button') || 
 			(element.attr('type') == 'next') 
-	) {
+	) 
+	{
 
 		clicker
 		.click(function() {
@@ -220,6 +247,7 @@ $('.element').each(function(){
 	if (element.attr('type') == 'socket') {
 
 		clicker.on('click',function(){
+			status = element.attr('status');
 			if (element.attr('defaultposition')) {
 				status = 'on';
 				element.removeAttr('defaultposition');
@@ -239,6 +267,9 @@ $('.element').each(function(){
 			}, 300)
 		}
 	}
+	});
 });
 
-});
+function elementsAlive() {
+
+}

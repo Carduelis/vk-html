@@ -152,7 +152,11 @@ function showSideHint(eN,choosenParam) {
 				// проверяет, что это не возврат на переднюю сторону
 				var sideOpener = $('#'+str_whatever(eN,'inBlock',choosenParam)).find('span[for="'+str_whatever(eN,'onSide',choosenParam).substr(14)+'"]');
 				sideOpener.addClass('active');
-				focusOnElement(sideOpener.offset().top);
+				if (sideOpener) {
+					if (sideOpener.offset()) {
+						focusOnElement(sideOpener.offset().top);
+					}
+				}
 				sideOpener.click(function(){
 					focusOnElement();
 				});
@@ -205,9 +209,7 @@ function str_action_whatever(eN, subject, pN, aN, choosenParam) 	{
 					if (thisEx[thisExId]['el'+eN][choosenParam].positions) {
 						if (thisEx[thisExId]['el'+eN][choosenParam].positions['position_'+pN]) {
 							if (thisEx[thisExId]['el'+eN][choosenParam].positions['position_'+pN]['action_'+aN]) {
-
-								 return thisEx[thisExId]['el'+eN][choosenParam].positions['position_'+pN]['action_'+aN][subject];
-
+								return thisEx[thisExId]['el'+eN][choosenParam].positions['position_'+pN]['action_'+aN][subject];
 							}
 						}
 					}
@@ -228,6 +230,8 @@ function str_action_whatever(eN, subject, pN, aN, choosenParam) 	{
 		}
 	}
 }
+
+
 function str_whatever(eN, subject, choosenParam) {
 	if (choosenParam) {
 		if (thisEx[thisExId]['el'+eN]) {

@@ -288,6 +288,19 @@ body> header {
 		}
 	}
 }
+#nameOfExercise {
+	line-height: 2.8rem;
+	max-width: 520px;
+	overflow: hidden;
+	height: 3rem;
+	a {
+		display: inline-block;
+		padding: 0;
+		line-height: 1rem;
+		vertical-align: middle;
+		border-right: 0;
+	}
+} 
 #createBody, #addScaleBody {
 	 > ul > li {
 		display: none;
@@ -1105,6 +1118,54 @@ section.shadow {
 		padding: @pad;
 		.radius(@pad/2);
 		box-shadow: @pad/4 @pad/4 @pad/4 @color-border, @pad-list @pad-list @pad-list @color-border;
+	}
+}
+
+#look-up,
+#look-down {
+	z-index: 9;
+	position: fixed;
+	display: block;
+	width: @pad*6;
+	height: @pad*6;
+	text-align: center;
+	line-height: @pad*6 !important;
+	color: @color-back;
+	.xxlarge;
+	cursor: pointer;
+	//background-color: @color-border;
+	background-color: fadeout(@accent-color, 20%);
+	.radius(50%);
+	&::before {
+		color: @color-back;
+	}
+	&:hover {
+	}
+}
+#look-up {
+	position: fixed;
+	top: @pad*7;
+	left: 50%;
+	display: none;
+	&::before {
+		.icon-arrow-up;
+	}
+	&.show {
+		display: block;
+		.bounceInUp;
+	}
+}
+#look-down {
+	position: fixed;
+	bottom: @pad*2;
+	left: 50%;
+	display: none;
+	&::before {
+		.icon-arrow-down;
+	}
+	&.show {
+		display: block;
+		.bounceInDown;
 	}
 }
 

@@ -1965,15 +1965,15 @@ $('[rel="telegraph"]').on('click',function() {
 			  });
 
 			ctrl(203,'rotator',0).change(function() {
-				if ($(this).attr('status') == 80)) {
+				if ($(this).attr('status') == 80) {
 					$('.scale202 .arrow').css('-webkit-transform','rotate(-4deg)');
 				}
-			}
+			});
 			ctrl(202,'rotator',1).change(function() {
-				if ($(this).attr('status') == 55)) {
+				if ($(this).attr('status') == 55) {
 					$('.scale202 .arrow').css('-webkit-transform','rotate(-41deg)');
 				}
-			}
+			});
 			ctrl(201,'rotator',0).change(function(){
 				
 				if (($(this).attr('progress') == 8) || ($(this).attr('progress') == 10) || ($(this).attr('progress') == 15)) { 

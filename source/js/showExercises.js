@@ -16,6 +16,9 @@ var choosenParam;
  
 $('#chooseExerciseBody .listing a').on('click', function(){
 	thisExId = $(this).attr('id');
+	$('body>header').animate({
+			scrollTop: 0
+	},200);
 	// Вывод списка дополнительных опций
 	$('#chooseExerciseBody .options ol li').remove();
 	for(var i in exercisesOptions[thisExId]) {

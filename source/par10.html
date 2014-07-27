@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="par10/main.css">
+<link rel="stylesheet" href="par10/pixelhunting.css">
+<script src="par10/jquery.js"></script>
+<script src="par10/scripts/ex1.js"></script>
+<script src="par10/main.js"></script>
+<title>ПАР-10</title>
+<meta charset="utf-8">
+</head>
+<body  onload="loadPage()">
+	<a id='tester' href='javascript:void(0)' data-click="0">Проверить</a>
+	<a class="hovering">Пар-10</a>
+	<div class='header'>
+		<ul class='main-menu'>
+			<li>
+				<a href='#' id='about'>О программе</a>
+			<li>
+				<a href='#'>Выбор упражнения &#9660;</a>
+				<ul class='sub-menu'>
+					<li><a id='exercise1'>1. Исходное положение органов управления</a>
+					<li><a id='exercise2'>2. Настройка и проверка работоспособности приводных передатчиков</a>
+					<li><a id='exercise2-1' class='sub'>2-1. Вид работы ТЛГ</a>
+					<li><a id='exercise2-2' class='sub'>2-2. Вид работы Привод-I</a>
+					<li><a id='exercise2-3' class='sub'>2-3. Вид работы Привод-II</a>
+					<li><a id='exercise3'>3. Местное управление прибором П200-1 при виде работы Привод-I</a>
+					<li><a id='exercise4'>4. Местное управление прибором П200-1 при виде работы Привод-II</a>
+					<li><a id='exercise5'>5. Местное автоматическое управление приборами П200 с прибора П300</a>
+					<li><a id='exercise6'>6. Дистанционное управение радиостанцией с ИП-2 аппаратуры Дистанция-I</a>
+					<!--<li><a id='exercise7'>6. Характерные неисправности и методы их устранения</a>-->
+				</ul>
+			<li>
+				<a href='#' id='training'  data="coach-activator" class='mode'><b>Тренировка</b></a>
+			<li>
+				<a href='#' id='passing' class='mode'>Экзамен</a>
+			<li>
+				<a href='' id='refresh'><i>Обновить</i></a>
+			<li>
+				<a href='#' id='theory'>Теория</a>
+			<li>
+				<a href='../PAR-10.html'>Стартовая страница</a>
+		</ul>
+	</div>
+	<div class="about">
+		<a id="closeAbout">Закрыть</a>
+		<h4>Системные требования</h4>
+		<ul>
+		<li>Pentium II (аналогичный) или лучше</li> 
+		<li>256 MB RAM (рекомендуется) </li>
+		<li>Windows 2000, XP, 7, 8.</li>
+		<li>Установленный браузер Opera версии не ниже 12, либо аналогичный Chrome или Firefox. <i>необходима поддержка css3-свойства transform: rotate();</i></li>
+		</ul>
+
+		<h4>Установка</h4>
+
+		<p>Программа готова к использованию без установки, если компьютер удовлетворяет системным требованиям. Для запуска программы необходимо открыть в браузере файл par10.html</p>
+		<h4>Назначение программы</h4> 
+		<p>Программа «Симулятор радиостанции ПАР-10С» предназначена для подготовки студентов, обучающихся на военных кафедрах при государственных образовательных учреждениях высшего профессионального образования по программе подготовки офицеров запаса по ВУС 461700. Программа включает алгоритмы включения и проверки работоспособности ПАР-10С и теоретический материал. Программа «Симулятор радиостанции ПАР-10С» разработана в соответствии с инструкцией по эксплуатации ПАР-10С. Данная программа может быть использована в учебном процессе ВУЗах и авиационных частях МО РФ.</p>
+		<p>		Программа имеет два режима работы – «ТРЕНИРОВКА» и «ЭКЗАМЕН».</p> 
+		<p>В режиме «ТРЕНИРОВКА» алгоритмы проходятся с отображением подсказок. ВАЖНО: четко следуйте подсказкам на экране. Несоблюдение инструкций и оперирование ручками, не указанными в инструкции приведет к оценке "Неудовлетворительно"
+		<p>В режиме «ЭКЗАМЕН» Вы выполняете программу по одному из алгоритмов под руководством преподавателя.
+		<h5>Контакты:</h5> 
+		<p>Вопросы и предложения касательно функционала программы и её использованию и доработке просим направлять на почту: vkmirea@gmail.com, тел. 434-92-78 
+		<p>Научный руководитель: 
+		<p>кандидат военных наук, доцент полковник Каргапольцев Аркадий Аркадьевич
+		<p>Разработчики: студенты военной кафедры и факультета ИТ
+		<p>Щеголев Павел Андреевич, Жур Богдан Олегович
+		<p>Военная кафедра МГТУ МИРЭА 2012
+	</div>
+	<div class="theory">
+		<a id="closeTheory">Закрыть</a>
+		<p><a name="Закладка_4"><strong>6.2.5. Проверка отклонений частоты от установленной.</strong></a></p>
+
+			<p>Произведите настройку прибора П200 по методике п. 4.4.1. на любую частоту диапазона передатчика. Подключите частотомер 43-63/1 к гнезду КОНТРОЛЬ ТОКА АНТЕННЫ на блоке П201. Отклонение частоты от установленной должно соответствовать указанному в п. 12 таблицы 4.</p>
+
+			<p>Таблица 4 п. 12</p>
+
+			<table align="center" border="1" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td style="width:213px">
+						<p>Наименование параметров</p>
+						</td>
+						<td style="width:106px">
+						<p>Номинальное значение</p>
+						</td>
+						<td style="width:87px">
+						<p>Допуск</p>
+						</td>
+						<td style="width:232px">
+						<p>Примечание</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:213px">
+						<p>12. Отклонение частоты от установленной</p>
+						</td>
+						<td style="width:106px">
+						<p>5&times;10-5</p>
+						</td>
+						<td style="width:87px">
+						<p>Не более</p>
+						</td>
+						<td style="width:232px">
+						<p>Измеряется частотомером Ч3-63/1</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+
+			<p><strong>6.3.1. </strong><strong>Измерение глубины модуляции по прибору КОНТРОЛЬ при виде работы &laquo;ПРИВОД </strong><strong>I</strong><strong>&raquo;:</strong></p>
+
+			<p>Установите переключатель КОНТРОЛЬ на блоке П202 в положение НАЧ. УСТ. и в паузе между опознавательными сигналами, т. е. при отсутствии модуляции, с помощью потенциометров НАЧ. УСТ. и УСТ. УРОВНЯ установите стрелку прибора на отметку шкалы в соответствии с таблицей 5.</p>
+
+			<p>&nbsp;</p>
+
+			<p>Таблица 5</p>
+
+			<table align="center" border="1" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td style="width:319px">
+						<p>Участки диапазона несущих частот, кГц</p>
+						</td>
+						<td style="width:319px">
+						<p>Отметка шкалы измерительного прибора в положение НАЧ. УСТ.</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:319px">
+						<p>150-250</p>
+						</td>
+						<td style="width:319px">
+						<p>94</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:319px">
+						<p>250-500</p>
+						</td>
+						<td style="width:319px">
+						<p>93</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:319px">
+						<p>500-1300</p>
+						</td>
+						<td style="width:319px">
+						<p>92</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="width:319px">
+						<p>1300-1750</p>
+						</td>
+						<td style="width:319px">
+						<p>91</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+
+			<p>установите тумблер ВЫХОД ФОС на блоке П205 в положение ОТКЛ;</p>
+
+			<p>произведите измерение коэффициента глубины модуляции, поочередно устанавливая переключатель КОНТРОЛЬ в положения М вниз и М вверх. Коэффициент глубины модуляции равен сумме значений М вниз + М вверх.</p>
+
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+
+			<p><a name="Закладка_5"><strong>6.3.2. Измерение глубины модуляции по прибору КОНТРОЛЬ в блоке П202 при видах работы &laquo;ПРИВОД </strong></a><strong>II</strong><strong>&raquo;, &laquo;ТРАНСЛЯЦИЯ&raquo;. &laquo;ТОН&raquo;, &laquo;МИКРОФОН&raquo;:</strong></p>
+
+			<p>произведите начальную установку измерительного прибора в момент подачи модулированного сигнала согласно таблице 5;</p>
+
+			<p>произведите отсчет коэффициента глубины модуляции, установив переключатель КОНТРОЛЬ в положение М вниз.</p>
+
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+
+			<p><strong>6.3.3.&nbsp; Измерение глубины модуляции по осциллографу при виде работы &laquo;ПРИВОД </strong><strong>I</strong><strong>&raquo;:</strong></p>
+
+			<p>установите луч развертки осциллографа по средней линии экрана;</p>
+
+			<p>подключите вход осциллографа к гнездам КОНТРОЛЬ ТОКА АНТЕННЫ на блоке П201;</p>
+
+			<p>произведите измерение в относительных единицах (например, в миллиметрах) полного размаха высокочастотного сигнала в момент паузы между опознавательными сигналами (сигнал А);</p>
+
+			<p>произведите измерение минимального размаха модулированного колебания в момент опознавательного сигнала (сигнал В); вычислите коэффициент модуляции по формуле:</p>
+
+			<p><img src="par10/images/formula0.png" /></p>
+
+			<p>Осциллограмма показана на рис. 19</p>
+
+			<p><img src="par10/images/ris_13.png" style="height:181px; width:391px"/></p>
+
+
+			<p>Рис. 13. Принцип измерения М%&nbsp; по &nbsp;осциллографу&nbsp; в режиме &laquo;Привод I&raquo;</p>
+
+			<p><a name="Закладка_3"><strong>6.3.4. Измерение глубины модуляции по осциллографу при виде работы &laquo;ПРИВОД </strong></a><strong>II</strong><strong>&raquo;:</strong></p>
+
+			<p>измерьте максимальный размах модулированного сигнала (величина А) в относительных единицах;</p>
+
+			<p>измерьте минимальный размах модулированного сигнала (величина В) также в относительных единицах;</p>
+
+			<p>вычислите коэффициент глубины модуляции по формуле:</p>
+
+			<p><img src="par10/images/formula1.png" /></p>
+
+			<p>Осциллограмма показана на рис. 20.</p>
+
+			<p><img src="par10/images/ris_20.png" style="height:181px; width:391px" /></p>
+
+			<p>Рис.20. Принцип&nbsp; измерения М% по осциллографу в режиме &laquo;Привод II&raquo;</p>
+
+	</div>
+	<div class='container'>
+		<div id='block702'>
+			<a class='control' type='toggler' data='num0' status='0'> </a>
+		</div>
+		<div id='block7020' style="display: none;">
+			<a class='control' type='toggler' data='num0' status='0'> </a>
+		</div>
+		<div class='holder'>
+			<ul class='grid second'>
+				<li class='one zoom'><img class="block999" style="width: 75%; Float: right; "src='par10/images/miniatures/И999.png'>
+				<li class='one zoom'><img class="block200" src='par10/images/miniatures/И200.png'>
+				<li class='one zoom'><img class="block501" src='par10/images/miniatures/П501.png'>
+			</ul><!--
+		 --><ul class='grid second'>
+				<li class='one'><img src='par10/images/miniatures/image10.png'>
+				<li class='one zoom'><img class='block201' src='par10/images/miniatures/П201.png'>
+				<li class='one zoom'><img class='block202' src='par10/images/miniatures/П202.png'>
+				<li class='two firstOfTwo zoom'><img class='block203' src='par10/images/miniatures/П203.png'>
+				<li class='two zoom'><img class='block205' src='par10/images/miniatures/П205.png'>
+				<li class='one zoom'><img class='block204' src='par10/images/miniatures/П204.png'>
+			</ul><!--
+			--><ul class='grid first'>
+				<li class='one zoom'><img class='block301' src='par10/images/miniatures/П301.png'>
+				<li class='one '><img src='par10/images/miniatures/image01.png'>
+				<li class='one '><img src='par10/images/miniatures/image02.png'>
+				<li class='one '><img src='par10/images/miniatures/image03.png'>
+			</ul><!--
+			--><ul class='grid second'>
+				<li class='one '><img src='par10/images/miniatures/image10.png'>
+				<li class='one '><img class='block201' src='par10/images/miniatures/П201.png'>
+				<li class='one '><img class='block202' src='par10/images/miniatures/П202.png'>
+				<li class='two firstOfTwo '><img class='block203' src='par10/images/miniatures/П203.png'>
+				<li class='two '><img class='block205' src='par10/images/miniatures/П205.png'>
+				<li class='one '><img class='block204' src='par10/images/miniatures/П204.png'>
+			</ul>
+		</div>
+	</div>
+	<div id='wrapper'>
+		<a href='#' id='close'>Закрыть</a>
+
+		<div class='container-level1' id='block200'>
+			<div class='image'>
+			</div>
+			<div class='ind'>
+				<img class='block200' src='par10/images/indicators.png'>
+				<div><span>125</span><span>800</span>		<span>0%</span>			<span>ЧТ</span><span class='double'>ОБП<br>(ВБ,НБ)</span>		<span>1</span>		<span>1</span><span>6</span>		<span>1</span><span>6</span></div>	
+				<div><span>200</span><span>1000</span>		<span>3%</span>			<span>ДЧТ</span><span>АККОРД</span>								<span>2</span>		<span>2</span><span>7</span>		<span>2</span><span>7</span></div>	
+				<div><span>250</span><span>6000</span>		<span>10%</span>		<span class='double'>АТ<br>(ТГ)</span><span>ВБ+НБ</span>		<span>3</span>		<span>3</span><span>8</span>		<span>3</span><span>8</span></div>	
+				<div><span>400</span><span></span>			<span>20%</span>		<span class='double'>ЧМ<br>(ТФ)</span><span>НБП</span>			<span>4</span>		<span>4</span><span>9</span>		<span>4</span><span>9</span></div>	
+				<div><span>500</span><span></span>			<span>50%<br>70%</span>	<span>ВБП</span><span></span>									<span>5</span>		<span>5</span><span>10</span>		<span>5</span><span>10</span></div>	
+			</div>	
+
+			<div class='scale-holder min-black scale200'>
+				<div class='scale'> </div>
+				<div class='arrow'> </div>
+				<div class='body'> </div>
+			</div>
+			<a type='lamp' data='num0' rel='green'> </a>
+			<a type='lamp' data='num1' rel='yellow'> </a>
+			<a type='lamp' data='num2' rel='yellow'> </a>
+			<a type='lamp' data='num3' rel='yellow'> </a>
+			<a type='lamp' data='num4' rel='yellow'> </a>
+			<a type='lamp' data='num5' rel='red'> </a>
+			<a type='lamp' data='num6' rel='red'> </a>
+
+			<a class='control' type='knob' data='num0' status='0' positions='11'> </a>
+			<a class='control' type='knob' data='num1' status='1' positions='3'> </a>
+			<a class='control' type='knob' data='num2' status='0' positions='4'> </a>
+			<a class='control' type='knob' data='num3' status='0' positions='4'> </a>
+			<a class='control' type='knob' data='num4' status='0' positions='3'> </a>
+			<a class='control' type='knob' data='num5' status='0' positions='8'> </a>
+			<a class='control' type='knob' data='num6' status='0' positions='11'> </a>
+			<a class='control' type='knob' data='num7' status='0' positions='6'> </a>
+			<a class='control' type='knob' data='num8' status='0' positions='4'> </a>
+			<a class='control' type='knob' data='num9' status='0' positions='6'> </a>
+			<a class='control' type='knob' data='num10' status='0' positions='11'> </a>
+			<a class='control' type='knob' data='num11' status='0' positions='11'> </a>
+			<a class='control' type='knob' data='num12' status='0' positions='3'> </a>
+			<a class='control' type='knob' data='num13' status='0' positions='3'> </a>
+			<a class='control' type='knob' data='num14' status='0' positions='3'> </a>
+			<a class='control' type='knob' data='num15' status='0' positions='3'> </a>
+			<a class='control' type='knob' data='num16' status='0' positions='3'> </a>
+
+			<a class='control' type='toggler' rel='btn' data='num0' status='0'> </a>
+			
+			<!-- Элементы на БПД-1 -->
+			<a type='lamp' data='num7' rel='red'> </a>
+			<a type='lamp' data='num8' rel='red'> </a>
+			<a type='lamp' data='num9' rel='yellow' size='big'> </a>
+			<a type='lamp' data='num10' rel='yellow' size='big'> </a>
+			<a type='lamp' data='num11' rel='red'> </a>
+			<a class='control' type='toggler' data='num1' status='1'> </a>
+			<a class='control' type='knob' data='num17' status='0' positions='2'> </a>
+			
+		</div>
+		<div class='container-level1' id='block999'>
+			<div class='image'>
+			</div>
+			<div class='ind'>
+				<img class='block999' src='par10/images/indicators.png'>
+				<div><span>125</span><span>800</span>		<span>0%</span>			<span>ЧТ</span><span class='double'>ОБП<br>(ВБ,НБ)</span>		<span>1</span>		<span>1</span><span>6</span>		<span>1</span><span>6</span></div>	
+				<div><span>200</span><span>1000</span>		<span>3%</span>			<span>ДЧТ</span><span>АККОРД</span>								<span>2</span>		<span>2</span><span>7</span>		<span>2</span><span>7</span></div>	
+				<div><span>250</span><span>6000</span>		<span>10%</span>		<span class='double'>АТ<br>(ТГ)</span><span>ВБ+НБ</span>		<span>3</span>		<span>3</span><span>8</span>		<span>3</span><span>8</span></div>	
+				<div><span>400</span><span></span>			<span>20%</span>		<span class='double'>ЧМ<br>(ТФ)</span><span>НБП</span>			<span>4</span>		<span>4</span><span>9</span>		<span>4</span><span>9</span></div>	
+				<div><span>500</span><span></span>			<span>50%<br>70%</span>	<span>ВБП</span><span></span>									<span>5</span>		<span>5</span><span>10</span>		<span>5</span><span>10</span></div>	
+			</div>	
+			<a type='lamp' data='num0' rel='green'> </a>
+			<a type='lamp' data='num1' rel='yellow'> </a>
+			<a type='lamp' data='num2' rel='yellow'> </a>
+			<a type='lamp' data='num3' rel='yellow'> </a>
+			<a type='lamp' data='num4' rel='yellow'> </a>
+			<a type='lamp' data='num5' rel='red'> </a>
+			<a type='lamp' data='num6' rel='red'> </a>
+
+			<div class='scale-holder min-black scale999'>
+				<div class='scale'> </div>
+				<div class='arrow'> </div>
+				<div class='body'> </div>
+			</div>
+
+			<a class='control' type='knob' data='num0' status='0' positions='11'> </a>
+			<a class='control' type='knob' data='num1' status='1' positions='3'> </a>
+			<a class='control' type='knob' data='num2' status='0' positions='4'> </a>
+			<a class='control' type='knob' data='num3' status='0' positions='4'> </a>
+			<a class='control' type='knob' data='num4' status='0' positions='3'> </a>
+			<a class='control' type='knob' data='num5' status='0' positions='8'> </a>
+			<a class='control' type='knob' data='num6' status='0' positions='11'> </a>
+			<a class='control' type='knob' data='num7' status='0' positions='6'> </a>
+			<a class='control' type='knob' data='num8' status='0' positions='4'> </a>
+			<a class='control' type='knob' data='num9' status='0' positions='6'> </a>
+			<a class='control' type='knob' data='num10' status='0' positions='11'> </a>
+			<a class='control' type='knob' data='num11' status='0' positions='11'> </a>
+			<a class='control' type='knob' data='num12' status='0' positions='3'> </a>
+			<a class='control' type='knob' data='num13' status='0' positions='3'> </a>
+			<a class='control' type='knob' data='num14' status='0' positions='3'> </a>
+			<a class='control' type='knob' data='num15' status='0' positions='3'> </a>
+			<a class='control' type='knob' data='num16' status='0' positions='3'> </a>
+
+			<a class='control' type='toggler' rel='btn' data='num0' status='0'> </a>
+			<!-- ВИД СИГНАЛОВ, КОТОРЫЙ ОТСУТСТВУЕТ НА ИП200 -->
+			<a class='control' type='knob' data='num18' status='0' positions='2'> </a>
+			<!-- Элементы на БПД-1 -->
+			<a type='lamp' data='num7' rel='red'> </a>
+			<a type='lamp' data='num8' rel='red'> </a>
+			<a type='lamp' data='num9' rel='yellow' size='big'> </a>
+			<a type='lamp' data='num10' rel='yellow' size='big'> </a>
+			<a type='lamp' data='num11' rel='red'> </a>
+			<a class='control' type='toggler' data='num1' status='1'> </a>
+			<a class='control' type='knob' data='num17' status='0' positions='2'> </a>
+			
+		</div>
+		<div class='container-level1' id='block201'>
+			<div class='image'>
+			<!--
+				<a style='left: 40px; top: 90px;' class='control type1 openWindow' id='control1' href='javascript:void(0)'>На новый уровень</a>
+				<a style='left: 140px; top: 40px;' class='control type1 action' id='control2' href=javascript:void()''>просто на клик</a>-->
+			</div>
+			
+			<div class='scale-holder min-black scale201'>
+				<div class='scale'> </div>
+				<div class='arrow'> </div>
+				<div class='body'> </div>
+			</div>
+
+			<a class='uncontrol' type='handler' rel='btn' data='num0' status='-90'> </a>
+			<a class='uncontrol' type='toggler' rel='btn' data='num1' status='0'> </a>
+			<a class='uncontrol' type='handler' rel='btn' data='num2' status='-90'> </a>
+
+			<a class='control' type='toggler' data='num3' status='0'> </a>
+			<a class='control' type='toggler' rel='telegraph' data='num4' status='0'> </a>
+			<a class='control' type='toggler' rel='rozetka' data='num5' status='0'> </a>
+
+			<a class='control' type='rotator' data='num0' status='0'></a>
+			<a class='control' type='rotator' data='num1' status='0'></a>
+			<a class='control' type='rotator' data='num2' status='0'></a>
+			
+			<a class='control' type='rotator' data='num3' status='0' statusData="-90"></a>
+			<a class='control' type='rotator' data='num4' status='0'></a>
+			
+			<a class='control' type='knob' rel='wheel' data='num0' status='0' positions='10'>
+			
+			</a>
+			
+			
+			<div class='container-level2' id='control1Block'>
+				<a href='#' class='close'>Закрыть</a>
+				парам-пам-пам
+			</div>
+		</div>
+		<div class='container-level1' id='block202'>
+			<div class='image'></div>
+			
+			<div class='scale-holder mid-black scale202'>
+				<div class='scale'> </div>
+				<div class='arrow'> </div>
+				<div class='body'> </div>
+			</div>
+			<a class='control' type='rotator' data='num0' status='0'></a>
+			<a class='control' type='rotator' data='num1' status='0'></a>
+			<a class='control' type='rotator' data='num2' status='0'></a>
+			<a class='control' type='rotator' data='num3' status='0'></a>
+			<a class='control' type='rotator' data='num4' status='0'></a>
+			<a class='control' type='rotator' data='num5' status='0'></a>
+			<a class='control' type='rotator' data='num6' status='0'></a>
+			<a class='control' type='rotator' data='num7' status='0'></a>
+
+			<a type='lamp' data='num0' rel='grey' size="big"> </a>
+			<a type='lamp' data='num1' rel='red'> </a>
+
+			<a class='control' type='toggler' data='num0' status='0' rel='btn'></a>
+			<a class='control' type='toggler' data='num1' status='0' rel='rozetka'></a>
+
+			<a class='control' type='knob' data='num0' status='0' positions='5'></a>
+			<a class='control' type='knob' rel='wheel' data='num1' status='0' positions='10'></a>
+		</div>
+
+		<div class='container-level1' id='block203'>
+			<div class='image'></div>
+			
+			<div class='scale-holder min-black scale203'>
+				<div class='scale'> </div>
+				<div class='arrow'> </div>
+				<div class='body'> </div>
+			</div>
+			<a class='control' type='eject' data="num0" status='0'>Выдвинуть блок</a>
+			<a class='control' type='toggler' rel='btn' data='num0' status='0'> </a>
+			<a class='control' type='toggler' data='num1' status='0'> </a>
+			<a class='control' type='toggler' rel='hor' data='num2' status='1'> </a>
+			<a class='control' type='toggler' data='num3' status='0'> </a>
+			<a class='control' type='toggler' data='num4' status='0'> </a>
+			<a class='control' type='toggler' data='num5' status='0' rel='btn'> </a>
+			
+			<a type='lamp' data='num0'> </a>
+			<a type='lamp' data='num1' rel='green'> </a>
+			
+			<a class='control' type='knob' data='num0' status='0' positions='2'></a>
+			<a class='control' type='knob' data='num1' status='2' positions='6'></a>
+			
+			<a class='control' type='rotator' data='num0' status='0'></a>
+			<a class='control' type='rotator' data='num1' status='0'></a>
+			<a class='control' type='rotator' data='num2' status='0'></a>
+			<a class='control' type='rotator' data='num3' status='0'></a>
+			
+		</div>
+		
+		<div class='container-level1' id='block204'>
+			<div class='image'></div>
+
+			<div class='scale-holder white amper scale204-1'>
+				<div class='scale'> </div>
+				<div class='arrow'> </div>
+				<div class='body'> </div>
+			</div>
+			
+			<div class='scale-holder white volt scale204-2'>
+				<div class='scale'> </div>
+				<div class='arrow'> </div>
+				<div class='body'> </div>
+			</div>
+
+			<a type='lamp' data='num0' rel='grey' size="big"> </a>
+			<a type='lamp' data='num1' rel='grey'> </a>
+			<a type='lamp' data='num2' rel='grey' size="big"> </a>
+
+			<a class='control' type='rotator' data='num0' status='0'></a>
+
+
+
+		</div>
+		
+		<div class='container-level1' id='block205'>
+			<div class='image'></div>
+			
+			<div class='scale-holder min-black scale205'>
+				<div class='scale'> </div>
+				<div class='arrow'> </div>
+				<div class='body'> </div>
+			</div>
+			<a class='control' type='eject' data="num0" status='0'>Выдвинуть блок</a>
+			
+			<a class='control' type='toggler' data='num0' status='1' rel='hor'> </a>
+			
+			<a type='lamp' data='num0' rel='green'> </a>
+			<a type='lamp' data='num1' rel='red'> </a>
+			<a type='lamp' data='num2' rel='green'> </a>
+			<a type='lamp' data='num3' rel='orange'> </a>
+			
+			<a class='control' type='knob' data='num0' status='0' positions='10'></a>
+			<a class='control' type='knob' data='num1' status='0' positions='3'></a>
+			<a class='control' type='knob' data='num2' status='0' positions='2'></a>
+			<a class='control' type='knob' data='num3' status='0' positions='10'></a>
+			<a class='control' type='knob' data='num4' status='0' positions='10'></a>
+			<a class='control' type='knob' data='num5' status='0' positions='10'></a>
+			<a class='control' type='knob' data='num6' status='0' positions='10'></a>
+		</div>
+		
+		<div class='container-level1' id='block301'>
+			<div class='image'></div>
+			
+			<div class='scale-holder min-black scale301'>
+				<div class='scale'> </div>
+				<div class='arrow'> </div>
+				<div class='body'> </div>
+			</div>
+			
+			<a class='control' type='toggler' data='num0' status='1' rel='hor'> </a>
+			<a class='control' type='toggler' data='num1' status='0' rel='hor'> </a>
+			<a class='control' type='toggler' data='num2' status='0' rel='btn'> </a>
+			<a class='control' type='toggler' data='num3' status='0' rel='btn'> </a>
+			<a class='control' type='toggler' data='num4' status='0' rel='btn'> </a>
+
+			<a class='control' type='toggler' data='num5' status='0' rel='ant'> </a>
+			<a class='control' type='toggler' data='num6' status='0' rel='ant'> </a>
+			<a class='control' type='toggler' data='num7' status='0' rel='ant'> </a>
+			<a class='control' type='toggler' data='num8' status='0' rel='ant'> </a>
+			<a class='control' type='toggler' data='num9' status='0' rel='ant'> </a>
+			<a class='control' type='toggler' data='num10' status='0' rel='ant'> </a>
+			<a class='control' type='toggler' data='num11' status='0' rel='ant'> </a>
+			<a class='control' type='toggler' data='num12' status='0' rel='ant'> </a>
+			<a class='control' type='toggler' data='num13' status='0' rel='ant'> </a>
+			<a class='control' type='toggler' data='num14' status='0' rel='ant'> </a>
+
+			<a type='lamp' data='num0' rel='grey'> </a>
+			<a type='lamp' data='num1' rel='grey'> </a>
+			<a type='lamp' data='num2' rel='grey'> </a>
+			<a type='lamp' data='num3' rel='grey'> </a>
+			<a type='lamp' data='num4' rel='grey'> </a>
+			<a type='lamp' data='num5' rel='grey'> </a>
+			<a type='lamp' data='num6' rel='grey'> </a>
+			<a type='lamp' data='num7' rel='red'> </a>
+			<a type='lamp' data='num8' rel='red'> </a>
+			<a type='lamp' data='num9' rel='grey'> </a>
+			<a type='lamp' data='num10' rel='orange'> </a>
+			<a type='lamp' data='num11' rel='orange'> </a>
+			<a type='lamp' data='num12' rel='green'> </a>
+			<a type='lamp' data='num13' rel='green'> </a>
+			<a type='lamp' data='num14' rel='green'> </a>
+			<a type='lamp' data='num15' rel='grey'> </a>
+			<a type='lamp' data='num16' rel='grey'> </a>
+			<a type='lamp' data='num17' rel='grey'> </a>
+			<a type='lamp' data='num18' rel='red'> </a>
+			<a type='lamp' data='num19' rel='red'> </a>
+			<a type='lamp' data='num20' rel='green'> </a>
+			<a type='lamp' data='num21' rel='green'> </a>
+			
+			<a class='control' type='knob' data='num0' status='1' positions='3'></a>
+			<a class='control' type='knob' data='num1' status='0' positions='3'></a>
+			<a class='control' type='knob' data='num2' status='0' positions='3'></a>
+			<a class='control' type='knob' data='num3' status='0' positions='3'></a>
+			<a class='control' type='knob' data='num4' status='0' positions='5'></a>
+			
+			<a class='control' type='rotator' data='num0' status='0'></a>
+			<a class='control' type='rotator' data='num1' status='15'></a>
+			<a class='control' type='rotator' data='num2' status='20'></a>
+			<a class='control' type='rotator' data='num3' status='10'></a>
+			
+		</div>
+		
+		<div class='container-level1' id='block501'>
+			<div class='image'></div>
+
+			<div class='scale-holder max-black scale501'>
+				<div class='scale'> </div>
+				<div class='arrow'> </div>
+				<div class='body'> </div>
+			</div>
+			<a type='lamp' data='num0' rel='red'> </a>
+			<a type='lamp' data='num1' rel='grey' size='big'> </a>
+			<a type='lamp' data='num2' rel='red' size='big'> </a>
+			<a type='lamp' data='num3' rel='red' size='big'> </a>
+			<a type='lamp' data='num4' rel='red' size='big'> </a>
+			<a type='lamp' data='num5' rel='grey' size='big'> </a>
+			<a type='lamp' data='num6' rel='orange' size='big'> </a>
+			<a type='lamp' data='num7' rel='red' size='big'> </a>
+			<a type='lamp' data='num8' rel='red' size='big'> </a>
+			<a type='lamp' data='num9' rel='red' size='big'> </a>
+			<a type='lamp' data='num10' rel='orange' size='big'> </a>
+			<a type='lamp' data='num11' rel='red' size='big'> </a>
+			<a type='lamp' data='num12' rel='red' size='big'> </a>
+			<a type='lamp' data='num13' rel='red' size='big'> </a>
+			<a type='lamp' data='num14' rel='red' size='big'> </a>
+			<a type='lamp' data='num15' rel='red' size='big'> </a>
+			<a type='lamp' data='num16' rel='red' size='big'> </a>
+			<a type='lamp' data='num17' rel='red' size='big'> </a>
+			<a type='lamp' data='num18' rel='red'> </a>
+			<a type='lamp' data='num19' rel='red' size='big'> </a>
+			<a type='lamp' data='num20' rel='red' size='big'> </a>
+			<a type='lamp' data='num21' rel='red'> </a>
+
+			<a class='control' type='knob' data='num0' status='0' positions='7'></a>
+			<a class='control' type='knob' data='num1' status='0' positions='4'></a>
+			<a class='control' type='knob' data='num2' status='0' positions='3'></a>
+			<a class='control' type='toggler' data='num0' status='0' rel='bigbtn'> </a>
+			<a class='control' type='toggler' data='num1' status='0' rel='bigbtn'> </a>
+			<a class='control' type='toggler' data='num2' status='0' rel='bigbtn'> </a>
+			<a class='control' type='toggler' data='num3' status='0' rel='bigbtn'> </a> 
+			<a class='control' type='toggler' data='num4' status='0'> </a> 
+			<a class='control' type='toggler' data='num5' status='0'> </a> 
+
+
+
+
+
+
+
+		</div>
+		<div class='container-level1' id='block2030'>
+			<img src="par10/images/П2030.png">
+			<a class='control' type='toggler' data='num0' status='1'> </a>
+			<a class='control' type='uneject' data='num0' status='0'>Задвинуть блок</a>
+		</div>
+		<div class='container-level1' id='block2050'>
+			<img src="par10/images/П2050.png">
+			<!-- <a class='control' type='toggler' data='num0' status='1'> </a> -->
+			<a class='control' type='knob' data='num0' status='0' positions='10'></a>
+			<a class='control' type='knob' data='num1' status='0' positions='10'></a>
+			<a class='control' type='knob' data='num2' status='0' positions='9'></a>
+			<a class='control' type='knob' data='num3' status='0' positions='7'></a>
+			<a class='control' type='knob' data='num4' status='0' positions='10'></a>
+			<a class='control' type='knob' data='num5' status='0' positions='10'></a>
+			<a class='control' type='knob' data='num6' status='0' positions='9'></a>
+			<a class='control' type='knob' data='num7' status='0' positions='7'></a>
+			<a class='control' type='knob' data='num8' status='0' positions='10'></a>
+			<a class='control' type='knob' data='num9' status='0' positions='10'></a>
+			<a class='control' type='knob' data='num10' status='0' positions='9'></a>
+			<a class='control' type='knob' data='num11' status='0' positions='7'></a>
+			<a class='control' type='knob' data='num12' status='0' positions='3'></a>
+			<a class='control' type='knob' data='num13' status='0' positions='3'></a>
+			<a class='control' type='uneject' data='num0' status='0'>Задвинуть блок обратно</a>
+		</div>
+
+</div>
+<a data="coach-activator" test="endTest" class="mode current">sdjflskdjflskdjf</a>
+	<div class="log">
+			<div class="exercize">
+			</div>
+			<div class="hinter">
+			</div>
+	</div>
+			<div class="userlog" style='overflow-y: scroll; max-height: 170px; width: 900px; background: rgba(255,255,255,.7)'>
+			</div>
+
+
+			<div id="tablewrapper">
+			<div id="choosePrivod">
+				<h3>Выберите привод</h3>
+				<table class="table">
+					<tr>
+						<td><a rel="near">Ближний привод</a></td>
+						<td><a rel="far">Дальний привод</a></td>
+					</tr>
+				</table>
+			</div>
+			<div id="chooseFrequency" style="display: none;">
+				<h3>Выберите частоту</h3>
+				<p>По умолчанию выбрано 600кГц, по указанию преподавателя это значение можно изменить</p>
+				<table class="table">
+					<tr>
+						<td><a rel="next">Продолжить</a></td>
+						<td><a rel="openTable">Выбрать</a></td>
+					</tr>
+				</table>
+			</div>
+			<div id="table" class="table" style="display: none;">
+			   <table border="1" cellpadding="5" width="100%">
+				<tr>
+				 <td colspan="4">При работе на 20-метровую антенну</td>
+				 <td colspan="4">При работе на 5-метровую антенну</td>
+				</tr>
+				<tr>
+				 <td rowspan="2">Частота, кГц</td>
+				 <td colspan="2">поддиапазоны</td>
+				 <td rowspan="2">Ток, А</td>
+				 <td rowspan="2">Частота, кГц</td>
+				 <td colspan="2">поддиапазоны</td>
+				 <td rowspan="2">Ток, А</td>
+				</tr>
+				<tr>
+				<td>ПК</td>
+				<td>АК</td>
+				<td>ПК</td>
+				<td>АК</td>
+				</tr>
+				<tr>
+				<td>150</td>	<td>1</td>	<td>1</td>	<td>6,6</td>	<td>150</td>	<td>1</td>	<td>1</td>	<td>5,6</td>
+				</tr>
+				<tr>
+				<td>155</td>	<td>1</td>	<td>1</td>	<td>6,6</td>	<td>160</td>	<td>1</td>	<td>1</td>	<td>5,6</td>
+				</tr>
+				<tr>
+				<td>155</td>	<td>1</td>	<td>2</td>	<td>6,6</td>	<td>160</td>	<td>1</td>	<td>2</td>	<td>5,6</td>
+				</tr>
+				<tr>
+				<td>175</td>	<td>1</td>	<td>2</td>	<td>6,8</td>	<td>180</td>	<td>2</td>	<td>2</td>	<td>5,9</td>
+				</tr>
+				<tr>
+				<td>175</td>	<td>1</td>	<td>3</td>	<td>6,8</td>	<td>180</td>	<td>2</td>	<td>3</td>	<td>5,9</td>
+				</tr>
+				<tr>
+				<td>196</td>	<td>2</td>	<td>3</td>	<td>7,2</td>	<td>200</td>	<td>2</td>	<td>3</td>	<td>6,0</td>
+				</tr>
+				<tr>
+				<td>196</td>	<td>2</td>	<td>4</td>	<td>7,2</td>	<td>200</td>	<td>2</td>	<td>4</td>	<td>6,0</td>
+				</tr>
+				<tr>
+				<td>277</td>	<td>3</td>	<td>4</td>	<td>7,5</td>	<td>235</td>	<td>3</td>	<td>4</td>	<td>6,8</td>
+				</tr>
+				<tr>
+				<td>227</td>	<td>3</td>	<td>5</td>	<td>7,5</td>	<td>235</td>	<td>3</td>	<td>5</td>	<td>6,8</td>
+				</tr>
+				<tr>
+				<td>271</td>	<td>3</td>	<td>5</td>	<td>7,6</td>	<td>280</td>	<td>4</td>	<td>5</td>	<td>7,0</td>
+				</tr>
+				<tr>
+				<td>271</td>	<td>3</td>	<td>6</td>	<td>7,6</td>	<td>280</td>	<td>4</td>	<td>6</td>	<td>7,0</td>
+				</tr>
+				<tr>
+				<td>346</td>	<td>4</td>	<td>6</td>	<td>7,6</td>	<td>355</td>	<td>4</td>	<td>6</td>	<td>7,1</td>
+				</tr>
+				<tr>
+				<td>346</td>	<td>4</td>	<td>7</td>	<td>7,6</td>	<td>355</td>	<td>4</td>	<td>7</td>	<td>7,1</td>
+				</tr>
+				<tr>
+				<td>450</td>	<td>5</td>	<td>7</td>	<td>7,5</td>	<td>470</td>	<td>5</td>	<td>7</td>	<td>6,9</td>
+				</tr>
+				<tr>
+				<td>450</td>	<td>5</td>	<td>8</td>	<td>7,5</td>	<td>470</td>	<td>5</td>	<td>8</td>	<td>6,9</td>
+				</tr>
+				<tr>
+				<td>555</td>	<td>5</td>	<td>8</td>	<td>6,7</td>	<td>600</td>	<td>6</td>	<td>8</td>	<td>6,5</td>
+				</tr>
+				<tr>
+			    <td>555</td>	<td>5</td>	<td>9</td>	<td>6,7</td>	<td>600</td>	<td>6</td>	<td>9</td>	<td>6,5</td>
+				</tr>
+				<tr>
+				<td>730</td>	<td>7</td>  <td>9</td>  <td>5,8</td>	<td>810</td>	<td>8</td>  <td>9</td>  <td>5,7</td>
+				</tr>
+				<tr fr="730" x1000="0" x100="7" x10="3" x1="0">
+				<td>730</td>	<td>7</td>	<td>10</td>	<td>5,8</td>	<td>810</td>	<td>8</td>	<td>10</td>	<td>5,7</td>
+				</tr>
+				<tr fr="1750" x1000="1" x100="7" x10="5" x1="0">
+				<td>1750</td>	<td>10</td>	<td>10</td>	<td>2,3</td>	<td>1750</td>	<td>10</td>	<td>10</td>	<td>2,2</td>
+				</tr>
+			   </table>
+			</div></div>
+</body>
+</html>

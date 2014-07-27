@@ -462,10 +462,11 @@ $('#table td:nth-of-type(5)').on('click',function(){
 		// Начало скрипта по открытию поп-апа
 		var imageUrl = $(this).attr('src');
 		//alert(imageUrl);
+		console.info(imageUrl);
 		imageUrl = imageUrl.replace(new RegExp("images\/miniatures",'g'),"images");
 		//imageUrl = imageUrl.replace(new RegExp("png",'g'),"jpg");
 		//alert(imageUrl);
-		exersizeNum = imageUrl[8]+imageUrl[9]+imageUrl[10];
+		exersizeNum = imageUrl[14]+imageUrl[15]+imageUrl[16]; //6
 		//alert(exersizeNum);
 		$('#block'+exersizeNum+'> .image').append('<img>');
 		$('#block'+exersizeNum+'> .image > img').attr('id','image'+exersizeNum).attr('src',imageUrl);

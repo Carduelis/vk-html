@@ -9,5 +9,4 @@ for /f "delims=" %%a in (%verfile%) do (
   (echo %%a)|>nul find /i "%seek%"&&((echo @="%CD2%\\source\\RSP\\RSP.exe")>>%tmpfile%)
   (echo %%a)|>nul find /i "%seek%"||(echo %%a)>>%tmpfile%
 )
-
-regedt32.exe /s %tmpfile%
+regedit.exe %CD2%\\%tmpfile%

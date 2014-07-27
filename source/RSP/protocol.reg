@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\rsp]
+@="URL:RSP Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\rsp\shell]
+@=""
+
+[HKEY_CLASSES_ROOT\rsp\shell\open]
+@=""
+
+[HKEY_CLASSES_ROOT\rsp\shell\open\command]
+@="instPath"

@@ -582,9 +582,9 @@ $('#table td:nth-of-type(5)').on('click',function(){
 	        ctrl(201,'rotator',3).children('.body').css('transform','rotate('+time+'deg)');
 
 	        mA = time/6 - 15;
-			$('.scale203 .arrow').css('-webkit-transform','rotate('+mA+'deg)');
+			$('.scale203 .arrow').css('transform','rotate('+mA+'deg)');
 	        A = time/3 - 15;
-			$('.scale201 .arrow').css('-webkit-transform','rotate('+A+'deg)');
+			$('.scale201 .arrow').css('transform','rotate('+A+'deg)');
 	    },100*k_speed);
 	  }).mouseup(function(e){
 	    clearInterval(interval);
@@ -609,13 +609,13 @@ $('#table td:nth-of-type(5)').on('click',function(){
 	        timeData = timeData.toFixed();
 	        ctrl(201,'rotator',3).attr('status',timeData);
 	        ctrl(201,'rotator',3).attr('statusData',time);
-	        ctrl(201,'rotator',3).children('.body').css('-webkit-transform','rotate('+time+'deg)');
+	        ctrl(201,'rotator',3).children('.body').css('transform','rotate('+time+'deg)');
 
 
 	        mA = time/6 - 15;
-			$('.scale203 .arrow').css('-webkit-transform','rotate('+mA+'deg)');
+			$('.scale203 .arrow').css('transform','rotate('+mA+'deg)');
 	        A = time/3 - 15;
-			$('.scale201 .arrow').css('-webkit-transform','rotate('+A+'deg)');
+			$('.scale201 .arrow').css('transform','rotate('+A+'deg)');
 	    },100*k_speed);
 	  }).mouseup(function(e){
 	    clearInterval(interval);
@@ -641,39 +641,39 @@ ctrl(202,'rotator',7).change(function(){
 	$(this).attr('status',val).children('.status').text(val);
 });
 ctrl(205,'knob',0).on('click',function(){
-	//if ($(this).attr('status') == 0) { $('.scale205 .arrow').css('-webkit-transform','rotate(-20deg)')}
-	if ($(this).attr('status') == 1) { $('.scale205 .arrow').css('-webkit-transform','rotate(-23deg)')}
-	if ($(this).attr('status') == 2) { $('.scale205 .arrow').css('-webkit-transform','rotate(-18deg)')}
-	if ($(this).attr('status') == 3) { $('.scale205 .arrow').css('-webkit-transform','rotate(20deg)')}
-	if ($(this).attr('status') == 4) { $('.scale205 .arrow').css('-webkit-transform','rotate(24deg)')}
-	if ($(this).attr('status') == 5) { $('.scale205 .arrow').css('-webkit-transform','rotate(20deg)')}
-	if ($(this).attr('status') == 6) { $('.scale205 .arrow').css('-webkit-transform','rotate(25deg)')}
-	if ($(this).attr('status') == 7) { $('.scale205 .arrow').css('-webkit-transform','rotate(24deg)')}
-	if ($(this).attr('status') == 8) { $('.scale205 .arrow').css('-webkit-transform','rotate(24deg)')}
-	if ($(this).attr('status') == 9) { $('.scale205 .arrow').css('-webkit-transform','rotate(20deg)')}
+	//if ($(this).attr('status') == 0) { $('.scale205 .arrow').css('transform','rotate(-20deg)')}
+	if ($(this).attr('status') == 1) { $('.scale205 .arrow').css('transform','rotate(-23deg)')}
+	if ($(this).attr('status') == 2) { $('.scale205 .arrow').css('transform','rotate(-18deg)')}
+	if ($(this).attr('status') == 3) { $('.scale205 .arrow').css('transform','rotate(20deg)')}
+	if ($(this).attr('status') == 4) { $('.scale205 .arrow').css('transform','rotate(24deg)')}
+	if ($(this).attr('status') == 5) { $('.scale205 .arrow').css('transform','rotate(20deg)')}
+	if ($(this).attr('status') == 6) { $('.scale205 .arrow').css('transform','rotate(25deg)')}
+	if ($(this).attr('status') == 7) { $('.scale205 .arrow').css('transform','rotate(24deg)')}
+	if ($(this).attr('status') == 8) { $('.scale205 .arrow').css('transform','rotate(24deg)')}
+	if ($(this).attr('status') == 9) { $('.scale205 .arrow').css('transform','rotate(20deg)')}
 });
 
 ctrl(203,'knob',1).on('click',function(){
 	if ($(this).attr('status') == 2) { 
-		$('.scale203 .arrow').css('-webkit-transform','rotate(25deg)');
-		$('.scale204-1.arrow').css('-webkit-transform','rotate(-28deg)');
-		$('.scale204-2 .arrow').css('-webkit-transform','rotate(12deg)');
-		$('.scale201 .arrow').css('-webkit-transform','rotate(-25deg)');
+		$('.scale203 .arrow').css('transform','rotate(25deg)');
+		$('.scale204-1.arrow').css('transform','rotate(-28deg)');
+		$('.scale204-2 .arrow').css('transform','rotate(12deg)');
+		$('.scale201 .arrow').css('transform','rotate(-25deg)');
 	}
 });
 ctrl(202,'knob',0).on('click',function(){
-	if ($(this).attr('status') == 0) { $('.scale202 .arrow').css('-webkit-transform','rotate(-20deg)')}
-	if ($(this).attr('status') == 1) { $('.scale202 .arrow').css('-webkit-transform','rotate(-23deg)')}
-	if ($(this).attr('status') == 2) { $('.scale202 .arrow').css('-webkit-transform','rotate(10deg)')}
-	if ($(this).attr('status') == 3) { $('.scale202 .arrow').css('-webkit-transform','rotate(-10deg)')}
-	if ($(this).attr('status') == 4) { $('.scale202 .arrow').css('-webkit-transform','rotate(24deg)')}
+	if ($(this).attr('status') == 0) { $('.scale202 .arrow').css('transform','rotate(-20deg)')}
+	if ($(this).attr('status') == 1) { $('.scale202 .arrow').css('transform','rotate(-23deg)')}
+	if ($(this).attr('status') == 2) { $('.scale202 .arrow').css('transform','rotate(10deg)')}
+	if ($(this).attr('status') == 3) { $('.scale202 .arrow').css('transform','rotate(-10deg)')}
+	if ($(this).attr('status') == 4) { $('.scale202 .arrow').css('transform','rotate(24deg)')}
 });
 ctrl(301,'knob',4).on('click',function(){
-	if ($(this).attr('status') == 0) { $('.scale301 .arrow').css('-webkit-transform','rotate(4deg)')}
-	if ($(this).attr('status') == 1) { $('.scale301 .arrow').css('-webkit-transform','rotate(-23deg)')}
-	if ($(this).attr('status') == 2) { $('.scale301 .arrow').css('-webkit-transform','rotate(5deg)')}
-	if ($(this).attr('status') == 3) { $('.scale301 .arrow').css('-webkit-transform','rotate(-22deg)')}
-	if ($(this).attr('status') == 4) { $('.scale301 .arrow').css('-webkit-transform','rotate(5deg)')}
+	if ($(this).attr('status') == 0) { $('.scale301 .arrow').css('transform','rotate(4deg)')}
+	if ($(this).attr('status') == 1) { $('.scale301 .arrow').css('transform','rotate(-23deg)')}
+	if ($(this).attr('status') == 2) { $('.scale301 .arrow').css('transform','rotate(5deg)')}
+	if ($(this).attr('status') == 3) { $('.scale301 .arrow').css('transform','rotate(-22deg)')}
+	if ($(this).attr('status') == 4) { $('.scale301 .arrow').css('transform','rotate(5deg)')}
 });
 
 ctrl(301,'knob',0).on('click',function(){
@@ -932,14 +932,14 @@ $('#block7020').on('click',function() {
 
 			ctrl(205,'lamp',0).removeClass('on');
 			ctrl(205,'lamp',2).removeClass('on');
-			$('.scale203 .arrow').css('-webkit-transform','rotate(-48deg)');
-			$('.scale501 .arrow').css('-webkit-transform','rotate(-48deg)');
-			$('.scale204-1 .arrow').css('-webkit-transform','rotate(-48deg)');
-			$('.scale204-2 .arrow').css('-webkit-transform','rotate(-48deg)');
+			$('.scale203 .arrow').css('transform','rotate(-48deg)');
+			$('.scale501 .arrow').css('transform','rotate(-48deg)');
+			$('.scale204-1 .arrow').css('transform','rotate(-48deg)');
+			$('.scale204-2 .arrow').css('transform','rotate(-48deg)');
 
 			ctrl(203,'lamp',1).addClass('totaloff');
 
-			$('#block205 .scale205 .arrow').css('-webkit-transform','rotate(0deg)');
+			$('#block205 .scale205 .arrow').css('transform','rotate(0deg)');
 
 			ctrl(203,'rotator',1).on('click',function(){
 			  	$('.scale204InBlock203').remove();
@@ -950,43 +950,43 @@ $('#block7020').on('click',function() {
 				if ($(this).attr('progress') == 11) {
 			
 					if ($(this).attr('status') == 60) { 
-						$('.scale204-1 .arrow').css('-webkit-transform','rotate(10deg)');
+						$('.scale204-1 .arrow').css('transform','rotate(10deg)');
 					} 
 					if ($(this).attr('status') == 40) {
-						$('.scale204-1 .arrow').css('-webkit-transform','rotate(-4deg)');
+						$('.scale204-1 .arrow').css('transform','rotate(-4deg)');
 					} 
 					if ($(this).attr('status') == 30) { // Нужное конечное
-						$('.scale204-1 .arrow').css('-webkit-transform','rotate(-9deg)');
+						$('.scale204-1 .arrow').css('transform','rotate(-9deg)');
 					} 
 					if ($(this).attr('status') == 75) { // Типа перебор
-						$('.scale204-1 .arrow').css('-webkit-transform','rotate(-34deg)');
+						$('.scale204-1 .arrow').css('transform','rotate(-34deg)');
 					} 
 				} else {
 					if ($(this).attr('status') == 10) {
-						$('.scale204-1 .arrow').css('-webkit-transform','rotate(-47deg)');
+						$('.scale204-1 .arrow').css('transform','rotate(-47deg)');
 					} 
 					if ($(this).attr('status') == 40) { 
-						$('.scale204-1 .arrow').css('-webkit-transform','rotate(-46deg)');
+						$('.scale204-1 .arrow').css('transform','rotate(-46deg)');
 					} 
 					if ($(this).attr('status') == 70) { // Нужное конечное
-						$('.scale204-1 .arrow').css('-webkit-transform','rotate(-44deg)');
+						$('.scale204-1 .arrow').css('transform','rotate(-44deg)');
 					} 
 					if ($(this).attr('status') == 75) { // Типа перебор
-						$('.scale204-1 .arrow').css('-webkit-transform','rotate(-43deg)');
+						$('.scale204-1 .arrow').css('transform','rotate(-43deg)');
 					} 
 					if ($(this).attr('status') == 80) { // Типа перебор
-						$('.scale204-1 .arrow').css('-webkit-transform','rotate(-39deg)');
+						$('.scale204-1 .arrow').css('transform','rotate(-39deg)');
 					} 
 				}
 
 					
-				if ($(this).attr('status') == 10) {$('.scale203 .arrow').css('-webkit-transform','rotate(-42deg)');} 
-				if ($(this).attr('status') == 20) {$('.scale203 .arrow').css('-webkit-transform','rotate(-38deg)');}
-				if ($(this).attr('status') == 30) {$('.scale203 .arrow').css('-webkit-transform','rotate(-34deg)');} 
-				if ($(this).attr('status') == 40) {$('.scale203 .arrow').css('-webkit-transform','rotate(-38deg)');}
-				if ($(this).attr('status') == 50) {$('.scale203 .arrow').css('-webkit-transform','rotate(-23deg)');} 
-				if ($(this).attr('status') == 60) {$('.scale203 .arrow').css('-webkit-transform','rotate(-18deg)');}
-				if ($(this).attr('status') == 70) {$('.scale203 .arrow').css('-webkit-transform','rotate(-12deg)');}
+				if ($(this).attr('status') == 10) {$('.scale203 .arrow').css('transform','rotate(-42deg)');} 
+				if ($(this).attr('status') == 20) {$('.scale203 .arrow').css('transform','rotate(-38deg)');}
+				if ($(this).attr('status') == 30) {$('.scale203 .arrow').css('transform','rotate(-34deg)');} 
+				if ($(this).attr('status') == 40) {$('.scale203 .arrow').css('transform','rotate(-38deg)');}
+				if ($(this).attr('status') == 50) {$('.scale203 .arrow').css('transform','rotate(-23deg)');} 
+				if ($(this).attr('status') == 60) {$('.scale203 .arrow').css('transform','rotate(-18deg)');}
+				if ($(this).attr('status') == 70) {$('.scale203 .arrow').css('transform','rotate(-12deg)');}
 			});
 			ctrl(202,'rotator',6).on('click',function(){
 			  	$('.scale203InBlock201').remove();
@@ -995,45 +995,45 @@ $('#block7020').on('click',function() {
 			  });
 			ctrl(202,'rotator',6).change(function(){
 				/*if ($(this).attr('status') == 15) { 
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-20deg)');
+					$('.scale203 .arrow').css('transform','rotate(-20deg)');
 				} 
 				if ($(this).attr('status') == 20) { 
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-15deg)');
+					$('.scale203 .arrow').css('transform','rotate(-15deg)');
 				} 
 				if ($(this).attr('status') == 25) {
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-10deg)');
+					$('.scale203 .arrow').css('transform','rotate(-10deg)');
 				} */
 				if ($(this).attr('status') == 5) { // Нужное конечное
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-2deg)');
+					$('.scale203 .arrow').css('transform','rotate(-2deg)');
 				} 
 				if ($(this).attr('status') == 6) { 
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-10deg)');
+					$('.scale203 .arrow').css('transform','rotate(-10deg)');
 				} 
 				if ($(this).attr('status') == 7) { 
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-15deg)');
+					$('.scale203 .arrow').css('transform','rotate(-15deg)');
 				} 
 				if ($(this).attr('status') == 8) { 
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-20deg)');
+					$('.scale203 .arrow').css('transform','rotate(-20deg)');
 				} 
 			});
 /*
 			$('.uncontrol').mouseup(function(){
 				if (ctrl(201,'rotator',3).attr('status') == 9) { 
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-15deg)');
+					$('.scale203 .arrow').css('transform','rotate(-15deg)');
 				} 
 				if (ctrl(201,'rotator',3).attr('status') == 3) { 
-					$('.scale203 .arrow').css('-webkit-transform','rotate(45deg)');
-					$('.scale201 .arrow').css('-webkit-transform','rotate(-47deg)'); // Ток антенны
+					$('.scale203 .arrow').css('transform','rotate(45deg)');
+					$('.scale201 .arrow').css('transform','rotate(-47deg)'); // Ток антенны
 				} 
 				if (ctrl(201,'rotator',3).attr('status') == 12) { 
-					$('.scale203 .arrow').css('-webkit-transform','rotate(24deg)');
-					$('.scale201 .arrow').css('-webkit-transform','rotate(0deg)'); // Ток антенны
+					$('.scale203 .arrow').css('transform','rotate(24deg)');
+					$('.scale201 .arrow').css('transform','rotate(0deg)'); // Ток антенны
 				} 
 				if (ctrl(201,'rotator',3).attr('status') == 11) { 
-					$('.scale201 .arrow').css('-webkit-transform','rotate(-3deg)'); // Ток антенны
+					$('.scale201 .arrow').css('transform','rotate(-3deg)'); // Ток антенны
 				} 
 				if (ctrl(201,'rotator',3).attr('status') == 13) { 
-					$('.scale201 .arrow').css('-webkit-transform','rotate(-3deg)'); // Ток антенны
+					$('.scale201 .arrow').css('transform','rotate(-3deg)'); // Ток антенны
 				} 
 			});
 */
@@ -1043,14 +1043,14 @@ $('#block7020').on('click',function() {
 				$('.scale203').clone().appendTo($('.scale203InBlock201'));
 			 });
 			$('#block201 .control[type="toggler"][data="num3"][progress="18"]').on('click',function(){
-				$('.scale201 .arrow').css('-webkit-transform','rotate(0deg)'); // Ток антенны
+				$('.scale201 .arrow').css('transform','rotate(0deg)'); // Ток антенны
 			});
 			$('#block201 .control[type="toggler"][data="num3"][progress="20"]').on('click',function(){
-				$('.scale201 .arrow').css('-webkit-transform','rotate(0deg)'); // Ток антенны
+				$('.scale201 .arrow').css('transform','rotate(0deg)'); // Ток антенны
 			}); 
 			ctrl(203,"toggler",1).on('click',function(){
-				$('.scale203 .arrow').css('-webkit-transform','rotate(9deg)'); // Режим усиления мощности
-				$('.scale204-1 .arrow').css('-webkit-transform','rotate(-9deg)'); // Режим усиления мощности
+				$('.scale203 .arrow').css('transform','rotate(9deg)'); // Режим усиления мощности
+				$('.scale204-1 .arrow').css('transform','rotate(-9deg)'); // Режим усиления мощности
 			  	$('.scale204InBlock203').remove();
 				$('body').append('<div class="scale204InBlock203 blockScale"></div>');
 				$('.scale204-1').clone().appendTo($('.scale204InBlock203'));
@@ -1058,7 +1058,7 @@ $('#block7020').on('click',function() {
 
 			ctrl(203,'rotator',2).change(function(){
 				if ($(this).attr('status') == 70) { // Нужное конечное
-					$('.scale203 .arrow').css('-webkit-transform','rotate(24deg)');
+					$('.scale203 .arrow').css('transform','rotate(24deg)');
 				} 
 			});
 			ctrl(203,'rotator',1).change(function(){
@@ -1068,7 +1068,7 @@ $('#block7020').on('click',function() {
 			});
 			ctrl(203,'rotator',1).change(function(){
 				if ($(this).attr('status') == 12) { // Нужное конечное
-					$('.scale202 .arrow').css('-webkit-transform','rotate(-20deg)');
+					$('.scale202 .arrow').css('transform','rotate(-20deg)');
 				} 
 			});
 			ctrl(202,'toggler',0).on('click',function(){
@@ -1077,16 +1077,16 @@ $('#block7020').on('click',function() {
 
 			ctrl(501,'knob',0).on('click',function(){
 				if ($(this).attr('status') == 3) {
-					$('.scale501 .arrow').css('-webkit-transform','rotate(-48deg)');
+					$('.scale501 .arrow').css('transform','rotate(-48deg)');
 				}
 				if ($(this).attr('status') == 4) {
-					$('.scale501 .arrow').css('-webkit-transform','rotate(-28deg)');
+					$('.scale501 .arrow').css('transform','rotate(-28deg)');
 				}
 				if ($(this).attr('status') == 5) {
-					$('.scale501 .arrow').css('-webkit-transform','rotate(-29deg)');
+					$('.scale501 .arrow').css('transform','rotate(-29deg)');
 				}
 				if ($(this).attr('status') == 6) {
-					$('.scale501 .arrow').css('-webkit-transform','rotate(-27deg)');
+					$('.scale501 .arrow').css('transform','rotate(-27deg)');
 				}
 			});
 			$('#close').on('click',function(){
@@ -1270,13 +1270,13 @@ $('#block7020').on('click',function() {
 			defaultPositions(000,7,201,"knob",0);
 			defaultPositions(000,9,205,"knob",0);
 			defaultPositions(000,0,205,"knob",1);
-			$('.scale201 .arrow').css('-webkit-transform','rotate(-48deg)');
+			$('.scale201 .arrow').css('transform','rotate(-48deg)');
 
 			$('a[rel="telegraph"').mousedown(function(){
-				$('.scale201 .arrow').css('-webkit-transform','rotate(-8deg)');
+				$('.scale201 .arrow').css('transform','rotate(-8deg)');
 			});
 			$('a[rel="telegraph"').mouseup(function(){
-				$('.scale201 .arrow').css('-webkit-transform','rotate(-48deg)');
+				$('.scale201 .arrow').css('transform','rotate(-48deg)');
 			});
 		// default pos end
 			$('#tester').on('click',function() {
@@ -1378,38 +1378,38 @@ $('#block7020').on('click',function() {
 			lamp(203,1,'on');
 
 			ctrl(202,'knob',0).on('click',function(){
-				if ($(this).attr('status') == 0) { $('.scale202 .arrow').css('-webkit-transform','rotate(-20deg)')}
-				if ($(this).attr('status') == 1) { $('.scale202 .arrow').css('-webkit-transform','rotate(-23deg)')}
-				if ($(this).attr('status') == 2) { $('.scale202 .arrow').css('-webkit-transform','rotate(6deg)')}
-				if ($(this).attr('status') == 3) { $('.scale202 .arrow').css('-webkit-transform','rotate(-24deg)')}
-				if ($(this).attr('status') == 4) { $('.scale202 .arrow').css('-webkit-transform','rotate(41deg)')}
+				if ($(this).attr('status') == 0) { $('.scale202 .arrow').css('transform','rotate(-20deg)')}
+				if ($(this).attr('status') == 1) { $('.scale202 .arrow').css('transform','rotate(-23deg)')}
+				if ($(this).attr('status') == 2) { $('.scale202 .arrow').css('transform','rotate(6deg)')}
+				if ($(this).attr('status') == 3) { $('.scale202 .arrow').css('transform','rotate(-24deg)')}
+				if ($(this).attr('status') == 4) { $('.scale202 .arrow').css('transform','rotate(41deg)')}
 			});
 
 			ctrl(203,'rotator',0).change(function(){
-				if ($(this).attr('status') == 5) { $('.scale203 .arrow').css('-webkit-transform','rotate(32deg)')} // Промежуточные
-				if ($(this).attr('status') == 20) { $('.scale203 .arrow').css('-webkit-transform','rotate(10deg)')} // Промежуточные
-				if ($(this).attr('status') == 40) { $('.scale203 .arrow').css('-webkit-transform','rotate(2deg)')} // Промежуточные
-				if ($(this).attr('status') == 60) { $('.scale203 .arrow').css('-webkit-transform','rotate(-8deg)')} // Промежуточные
-				if ($(this).attr('status') == 80) { $('.scale203 .arrow').css('-webkit-transform','rotate(-21deg)')} // Нужное конечное
+				if ($(this).attr('status') == 5) { $('.scale203 .arrow').css('transform','rotate(32deg)')} // Промежуточные
+				if ($(this).attr('status') == 20) { $('.scale203 .arrow').css('transform','rotate(10deg)')} // Промежуточные
+				if ($(this).attr('status') == 40) { $('.scale203 .arrow').css('transform','rotate(2deg)')} // Промежуточные
+				if ($(this).attr('status') == 60) { $('.scale203 .arrow').css('transform','rotate(-8deg)')} // Промежуточные
+				if ($(this).attr('status') == 80) { $('.scale203 .arrow').css('transform','rotate(-21deg)')} // Нужное конечное
 			});
 			ctrl(202,'rotator',0).change(function(){
-				if ($(this).attr('status') == 5) { $('.scale202 .arrow').css('-webkit-transform','rotate(29deg)')} // Нужное начальное
-				if ($(this).attr('status') == 35) { $('.scale202 .arrow').css('-webkit-transform','rotate(-6deg)')} // Нужное конечное
+				if ($(this).attr('status') == 5) { $('.scale202 .arrow').css('transform','rotate(29deg)')} // Нужное начальное
+				if ($(this).attr('status') == 35) { $('.scale202 .arrow').css('transform','rotate(-6deg)')} // Нужное конечное
 			});
 			ctrl(202,'rotator',1).change(function(){
-				if ($(this).attr('status') == 20) { $('.scale202 .arrow').css('-webkit-transform','rotate(29deg)')} // Промежуточное
-				if ($(this).attr('status') == 55) { $('.scale202 .arrow').css('-webkit-transform','rotate(41deg)')} // Нужное конечное
+				if ($(this).attr('status') == 20) { $('.scale202 .arrow').css('transform','rotate(29deg)')} // Промежуточное
+				if ($(this).attr('status') == 55) { $('.scale202 .arrow').css('transform','rotate(41deg)')} // Нужное конечное
 			});
 
 
 			ctrl(203,'toggler',1).on('click',function(){
 				if ($(this).attr('progress') == 6) {
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-24deg)'); // Ток антенны
+					$('.scale203 .arrow').css('transform','rotate(-24deg)'); // Ток антенны
 				}
 			});
 
 			ctrl(203,'rotator',3).change(function(){
-				if ($(this).attr('status') == 30) { $('.scale203 .arrow').css('-webkit-transform','rotate(-21deg)')} // Нужное конечное
+				if ($(this).attr('status') == 30) { $('.scale203 .arrow').css('transform','rotate(-21deg)')} // Нужное конечное
 			});
 		// default pos end
 			$('#tester').on('click',function() {
@@ -1522,26 +1522,26 @@ $('#block7020').on('click',function() {
 			lamp(203,1,'on');
 
 			ctrl(202,'knob',0).on('click',function(){
-				if ($(this).attr('status') == 0) { $('.scale202 .arrow').css('-webkit-transform','rotate(-20deg)')}
-				if ($(this).attr('status') == 1) { $('.scale202 .arrow').css('-webkit-transform','rotate(-23deg)')}
-				if ($(this).attr('status') == 2) { $('.scale202 .arrow').css('-webkit-transform','rotate(10deg)')}
-				if ($(this).attr('status') == 3) { $('.scale202 .arrow').css('-webkit-transform','rotate(29deg)')}
-				if ($(this).attr('status') == 4) { $('.scale202 .arrow').css('-webkit-transform','rotate(41deg)')}
+				if ($(this).attr('status') == 0) { $('.scale202 .arrow').css('transform','rotate(-20deg)')}
+				if ($(this).attr('status') == 1) { $('.scale202 .arrow').css('transform','rotate(-23deg)')}
+				if ($(this).attr('status') == 2) { $('.scale202 .arrow').css('transform','rotate(10deg)')}
+				if ($(this).attr('status') == 3) { $('.scale202 .arrow').css('transform','rotate(29deg)')}
+				if ($(this).attr('status') == 4) { $('.scale202 .arrow').css('transform','rotate(41deg)')}
 			});
 
 			ctrl(203,'rotator',0).change(function(){
-				if ($(this).attr('status') == 20) { $('#block203 .arrow').css('-webkit-transform','rotate(10deg)')} // Промежуточные
-				if ($(this).attr('status') == 40) { $('#block203 .arrow').css('-webkit-transform','rotate(2deg)')} // Промежуточные
-				if ($(this).attr('status') == 60) { $('#block203 .arrow').css('-webkit-transform','rotate(-8deg)')} // Промежуточные
-				if ($(this).attr('status') == 80) { $('#block203 .arrow').css('-webkit-transform','rotate(-18deg)')} // Нужное конечное
+				if ($(this).attr('status') == 20) { $('#block203 .arrow').css('transform','rotate(10deg)')} // Промежуточные
+				if ($(this).attr('status') == 40) { $('#block203 .arrow').css('transform','rotate(2deg)')} // Промежуточные
+				if ($(this).attr('status') == 60) { $('#block203 .arrow').css('transform','rotate(-8deg)')} // Промежуточные
+				if ($(this).attr('status') == 80) { $('#block203 .arrow').css('transform','rotate(-18deg)')} // Нужное конечное
 			});
 			ctrl(202,'rotator',0).change(function(){
-				if ($(this).attr('status') == 0) { $('.scale202 .arrow').css('-webkit-transform','rotate(29deg)')} // Нужное начальное
-				if ($(this).attr('status') == 35) { $('#block203 .arrow').css('-webkit-transform','rotate(-6deg)')} // Нужное конечное
+				if ($(this).attr('status') == 0) { $('.scale202 .arrow').css('transform','rotate(29deg)')} // Нужное начальное
+				if ($(this).attr('status') == 35) { $('#block203 .arrow').css('transform','rotate(-6deg)')} // Нужное конечное
 			});
 			ctrl(202,'rotator',1).change(function(){
-				if ($(this).attr('status') == 20) { $('.scale202 .arrow').css('-webkit-transform','rotate(29deg)')} // Промежуточное
-				if ($(this).attr('status') == 55) { $('#block203 .arrow').css('-webkit-transform','rotate(41deg)')} // Нужное конечное
+				if ($(this).attr('status') == 20) { $('.scale202 .arrow').css('transform','rotate(29deg)')} // Промежуточное
+				if ($(this).attr('status') == 55) { $('#block203 .arrow').css('transform','rotate(41deg)')} // Нужное конечное
 			});
 		// default pos end
 			$('#tester').on('click',function() {
@@ -1667,53 +1667,53 @@ $('#block7020').on('click',function() {
 
 			ctrl(201,'rotator',0).change(function(){
 				/*if ($(this).attr('status') == 15) { 
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-20deg)');
+					$('.scale203 .arrow').css('transform','rotate(-20deg)');
 				} 
 				if ($(this).attr('status') == 20) { 
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-15deg)');
+					$('.scale203 .arrow').css('transform','rotate(-15deg)');
 				} 
 				if ($(this).attr('status') == 25) {
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-10deg)');
+					$('.scale203 .arrow').css('transform','rotate(-10deg)');
 				} */
 				if ($(this).attr('status') == 5) { // Нужное конечное
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-2deg)');
+					$('.scale203 .arrow').css('transform','rotate(-2deg)');
 				} 
 				if ($(this).attr('status') == 6) { 
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-10deg)');
+					$('.scale203 .arrow').css('transform','rotate(-10deg)');
 				} 
 				if ($(this).attr('status') == 7) { 
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-15deg)');
+					$('.scale203 .arrow').css('transform','rotate(-15deg)');
 				} 
 				if ($(this).attr('status') == 8) { 
-					$('.scale203 .arrow').css('-webkit-transform','rotate(-20deg)');
+					$('.scale203 .arrow').css('transform','rotate(-20deg)');
 				} 
 			});
 
 			
 			ctrl(201,'rotator',1).change(function(){
 				if ($(this).attr('status') == 25) { 
-					$('#block201 .arrow').css('-webkit-transform','rotate(-10deg)');
+					$('#block201 .arrow').css('transform','rotate(-10deg)');
 				}
 				
 				if ($(this).attr('status') == 55) { 
-					$('#block201 .arrow').css('-webkit-transform','rotate(-5deg)');
+					$('#block201 .arrow').css('transform','rotate(-5deg)');
 				}
 				
 				if ($(this).attr('status') == 70) { 
-					$('#block201 .arrow').css('-webkit-transform','rotate(-3deg)');
+					$('#block201 .arrow').css('transform','rotate(-3deg)');
 					$('#block301 a[type="lamp"][data="num12"]').removeClass('on'); // Работа
 				}
 				if ($(this).attr('status') == 70) { // Нужное конечное
-					$('.scale4243 .arrow').css('-webkit-transform','rotate(-24deg)');
+					$('.scale4243 .arrow').css('transform','rotate(-24deg)');
 				} 
 				if ($(this).attr('status') == 50) { 
-					$('.scale4243 .arrow').css('-webkit-transform','rotate(-22deg)');
+					$('.scale4243 .arrow').css('transform','rotate(-22deg)');
 				} 
 				if ($(this).attr('status') == 30) { 
-					$('.scale4243 .arrow').css('-webkit-transform','rotate(-20deg)');
+					$('.scale4243 .arrow').css('transform','rotate(-20deg)');
 				} 
 				if ($(this).attr('status') == 10) { 
-					$('.scale4243 .arrow').css('-webkit-transform','rotate(-19deg)');
+					$('.scale4243 .arrow').css('transform','rotate(-19deg)');
 				} 
 
 				if ($(this).attr('progress') == 10) { 
@@ -1724,12 +1724,12 @@ $('#block7020').on('click',function() {
 
 				if ($(this).attr('progress') == 12) {
 					if ($(this).attr('status') == 70) { // Нужное конечное
-						$('.scale4243 .arrow').css('-webkit-transform','rotate(-15deg)');
+						$('.scale4243 .arrow').css('transform','rotate(-15deg)');
 					} 
 				}
 				if ($(this).attr('progress') == 17) {
 					if ($(this).attr('status') == 70) { // Нужное конечное
-						$('.scale4243 .arrow').css('-webkit-transform','rotate(-15deg)');
+						$('.scale4243 .arrow').css('transform','rotate(-15deg)');
 					} 
 				}
 
@@ -1740,7 +1740,7 @@ $('#block7020').on('click',function() {
 					$('#block301 a[type="lamp"][data="num12"]').removeClass('on'); // Работа
 				
 					if ($(this).attr('status') == 70) { // Нужное конечное
-						$('.scale4243 .arrow').css('-webkit-transform','rotate(-18deg)');
+						$('.scale4243 .arrow').css('transform','rotate(-18deg)');
 					} 
 				}
 
@@ -1773,7 +1773,7 @@ $('#block7020').on('click',function() {
 					$('#block301 a[type="lamp"][data="num13"]').addClass('on'); // Готовность
 				}
 			});
-			$('#block203 .arrow').css('-webkit-transform','rotate(24deg)');
+			$('#block203 .arrow').css('transform','rotate(24deg)');
 		// default pos end
 			$('#tester').on('click',function() {
 				var f = false;
@@ -1957,7 +1957,7 @@ $('[rel="telegraph"]').on('click',function() {
 			  	$('.scale4342InBlock201').remove();
 			});
 
-			$('.scale301 .arrow').css('-webkit-transform','rotate(4deg)');
+			$('.scale301 .arrow').css('transform','rotate(4deg)');
 			ctrl(201,'rotator',0).change(function(){
 				if (($(this).attr('progress') == 8) || ($(this).attr('progress') == 10) || ($(this).attr('progress') == 15)) {
 					$('.scale4342InBlock201').remove();
@@ -1967,12 +1967,12 @@ $('[rel="telegraph"]').on('click',function() {
 
 			ctrl(203,'rotator',0).change(function() {
 				if ($(this).attr('status') == 80) {
-					$('.scale202 .arrow').css('-webkit-transform','rotate(-4deg)');
+					$('.scale202 .arrow').css('transform','rotate(-4deg)');
 				}
 			});
 			ctrl(202,'rotator',1).change(function() {
 				if ($(this).attr('status') == 55) {
-					$('.scale202 .arrow').css('-webkit-transform','rotate(-41deg)');
+					$('.scale202 .arrow').css('transform','rotate(-41deg)');
 				}
 			});
 			ctrl(201,'rotator',0).change(function(){
@@ -1985,22 +1985,22 @@ $('[rel="telegraph"]').on('click',function() {
 
 				if ($(this).attr('progress') == 8) {
 					if ($(this).attr('status') == 20) { // Нужное конечное
-						$('.scale4243 .arrow').css('-webkit-transform','rotate(-33deg)');
-						$('#block201 .arrow').css('-webkit-transform','rotate(-24deg)');
+						$('.scale4243 .arrow').css('transform','rotate(-33deg)');
+						$('#block201 .arrow').css('transform','rotate(-24deg)');
 					} 
 				}
 				if ($(this).attr('progress') == 10) {
 					if ($(this).attr('status') == 70) { // Нужное конечное
-						$('.scale4243 .arrow').css('-webkit-transform','rotate(-17deg)');
+						$('.scale4243 .arrow').css('transform','rotate(-17deg)');
 					} 
 				}
 
 				if ($(this).attr('progress') == 13) {
-					$('.scale4243 .arrow').css('-webkit-transform','rotate(-33deg)');
+					$('.scale4243 .arrow').css('transform','rotate(-33deg)');
 				}
 				if ($(this).attr('progress') == 15) {
 					if ($(this).attr('status') == 70) { // Нужное конечное
-						$('.scale4243 .arrow').css('-webkit-transform','rotate(-17deg)');
+						$('.scale4243 .arrow').css('transform','rotate(-17deg)');
 					} 
 				}
 
@@ -2011,7 +2011,7 @@ $('[rel="telegraph"]').on('click',function() {
 					$('#block301 a[type="lamp"][data="num12"]').removeClass('on'); // Работа
 				
 					if ($(this).attr('status') == 70) { // Нужное конечное
-						$('.scale4243 .arrow').css('-webkit-transform','rotate(-18deg)');
+						$('.scale4243 .arrow').css('transform','rotate(-18deg)');
 					} 
 				}
 
@@ -2067,9 +2067,9 @@ $('[rel="telegraph"]').on('click',function() {
 					$('#block301 a[type="lamp"][data="num13"]').removeClass('on'); // Готовность
 				}
 			});
-			$('#block201 .arrow').css('-webkit-transform','rotate(15deg)');
-			$('#block203 .arrow').css('-webkit-transform','rotate(24deg)');
-			$('.scale4243 .arrow').css('-webkit-transform','rotate(-17deg)');
+			$('#block201 .arrow').css('transform','rotate(15deg)');
+			$('#block203 .arrow').css('transform','rotate(24deg)');
+			$('.scale4243 .arrow').css('transform','rotate(-17deg)');
 		$('#tester').on('click',function() {
 			var f = false;
 			do {
@@ -2217,19 +2217,19 @@ $('[rel="telegraph"]').on('click',function() {
 			ctrl(201,'rotator',1).change(function(){
 
 				if ($(this).attr('status') == 5) {
-					$('.scale4243 .arrow').css('-webkit-transform','rotate(-3deg)');
+					$('.scale4243 .arrow').css('transform','rotate(-3deg)');
 				} 
 				if ($(this).attr('status') == 15) {
-					$('.scale4243 .arrow').css('-webkit-transform','rotate(-7deg)');
+					$('.scale4243 .arrow').css('transform','rotate(-7deg)');
 				} 
 				if ($(this).attr('status') == 25) {
-					$('.scale4243 .arrow').css('-webkit-transform','rotate(-15deg)');
+					$('.scale4243 .arrow').css('transform','rotate(-15deg)');
 				} 
 				if ($(this).attr('status') == 35) { 
-					$('.scale4243 .arrow').css('-webkit-transform','rotate(-26deg)');
+					$('.scale4243 .arrow').css('transform','rotate(-26deg)');
 				} 
 				if ($(this).attr('status') == 45) { // Нужное конечное
-					$('.scale4243 .arrow').css('-webkit-transform','rotate(-33deg)');
+					$('.scale4243 .arrow').css('transform','rotate(-33deg)');
 					$('#block301 a[type="lamp"][data="num10"]').addClass('on'); // Ток ниже нормы
 					$('#block301 a[type="lamp"][data="num11"]').addClass('on'); // Модуляция ниже нормы
 					$('#block301 a[type="lamp"][data="num7"]').addClass('on'); // Неисправно
@@ -2243,7 +2243,7 @@ $('[rel="telegraph"]').on('click',function() {
 					$('#block301 a[type="lamp"][data="num11"]').removeClass('on'); // Модуляция ниже нормы
 				}
 			});
-			$('.scale4243 .arrow').css('-webkit-transform','rotate(0deg)');
+			$('.scale4243 .arrow').css('transform','rotate(0deg)');
 
 
 		// default pos end
@@ -2356,19 +2356,19 @@ $('[rel="telegraph"]').on('click',function() {
 
 			ctrl(200,'knob',0).on('click',function(){
 				if ($(this).attr('status') == 0) {
-					$('.scale200 .arrow').css('-webkit-transform','rotate(0deg)');
+					$('.scale200 .arrow').css('transform','rotate(0deg)');
 				} 
 				if ($(this).attr('status') == 1) { 
-					$('.scale200 .arrow').css('-webkit-transform','rotate(-28deg)');
+					$('.scale200 .arrow').css('transform','rotate(-28deg)');
 				} 
 				if ($(this).attr('status') == 2) { 
-					$('.scale200 .arrow').css('-webkit-transform','rotate(28deg)');
+					$('.scale200 .arrow').css('transform','rotate(28deg)');
 				} 
 				if ($(this).attr('status') == 3) { 
-					$('.scale200 .arrow').css('-webkit-transform','rotate(-30deg)');
+					$('.scale200 .arrow').css('transform','rotate(-30deg)');
 				} 
 				if ($(this).attr('status') == 4) { 
-					$('.scale200 .arrow').css('-webkit-transform','rotate(-33deg)');
+					$('.scale200 .arrow').css('transform','rotate(-33deg)');
 				} 
 			});
 

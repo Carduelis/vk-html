@@ -1154,3 +1154,6 @@ top: 15%;
 .table tr:hover td {
 	color: #000;
 }
+.userlog {
+	display: none;
+}

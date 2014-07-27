@@ -398,7 +398,7 @@ section.size120 {padding: @scale*60 @scale*60 !important}
 			background: @silver;
 		}
 	}
-	#min_stack1_block3 {
+	#min_stack1_block3, #min_stack1_block4 {
 		position: absolute;
 		top: -35%;
 		right: -21%;
@@ -409,6 +409,9 @@ section.size120 {padding: @scale*60 @scale*60 !important}
 			top: -2rem;
 			left: 0;
 		}
+	}
+	#min_stack1_block4 {
+		top: -100%;
 	}
 
 
@@ -429,4 +432,23 @@ section.size120 {padding: @scale*60 @scale*60 !important}
 }
 	.kdp {
 		padding: 50%;
+	}
+
+	#stack9 {
+		.kdp {
+			padding: 28%;
+		}
+	}
+	#stack0_block1_front {
+		.element[type="next"][num="60"] {
+			opacity: 0;
+			&.shadow {
+				opacity: 1;
+			}
+		}
+	}
+
+	#stack1_block4,
+	#min_stack1_block4 {
+		padding: 17% 26%!important
 	}

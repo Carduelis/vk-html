@@ -139,6 +139,7 @@ $(document).ready(function(){
 	if (element.attr('type') == 'toggler') {
 		if (element.attr('toggles') == '4') {
 			clicker.on('click',function(){
+				status = element.attr('status');
 				status++
 				if (status == 4) {
 					status = 0;

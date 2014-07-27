@@ -620,7 +620,7 @@ var exercisesContainer = {
 			},
 			positions : {
 				position_1 : {
-					state : '0',
+					state : '1',
 					description : 'Установите переключатель включения питания индикаторов на передней панели блока ВИ-П в положение СЕТЬ',
 				},
 			},
@@ -1436,7 +1436,7 @@ var exercisesContainer = {
 			},
 			positions : {
 				position_1 : {
-					state : '0',
+					state : '1',
 					description : 'Установите переключатель ИНДИКАТОР-ОТКЛ блока ВИ-Д в положение ИНДИКАТОР',
 				},
 			},

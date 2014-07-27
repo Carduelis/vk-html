@@ -1,4 +1,4 @@
-@echo off
+﻿@echo off
 chcp 1251
 set CD2=%CD:\=\\%
 set verfile=source\\protocol.reg

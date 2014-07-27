@@ -594,7 +594,9 @@ var exercisesContainer = {
 			},
 		},
 		el15 : {
-			click : '11',
+			shift : '0',
+
+			/*click : '11',
 			current : {
 				inStack : 'stack7',
 				inBlock : 'stack7_block1',
@@ -604,10 +606,10 @@ var exercisesContainer = {
 			},
 			positions : {
 				position_1 : {
-					state : '1',
+					state : '1', //этот шаг не нужен, но переделывать ради него всё дальнейшее упражнение очень не хочется
 					description : 'Включите автомат ДИСПЕТЧЕРСКИЙ на распределительном щите',
 				},
-			},
+			}, */
 		},
 		el16 : {
 			click : '12',

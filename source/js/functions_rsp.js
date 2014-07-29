@@ -2,6 +2,14 @@
 //jQuery(".phones b").fitText();
 
 $(document).ready(function(){
+  
+
+$('#index_hint').on('click', function(){
+  $('#index_hint_block').fadeIn();
+});
+$('#index_close_hint').on('click', function(){
+  $('#index_hint_block').fadeOut();
+});
 // Главная страница
 /*
 var viewportWidth = $('#container').width();
@@ -132,7 +140,6 @@ $('#stack6_block2_front').on('dblclick',function(){
 });
 
 
-
 // ----------------------------
 // Показать верхнее меню
 // ----------------------------
@@ -165,5 +172,3 @@ $('.btn-group > .inside > .btn').bind('click',function() {
 });
 $('.btn-group > .inside > .btn:first-child').addClass('active');
 $('.view-group > .view:first-child').show();
-
-

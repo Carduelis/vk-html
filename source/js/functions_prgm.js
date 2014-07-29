@@ -38,6 +38,12 @@ $('section').each(function(){
 // ----------------------------
 // Показываем блоки
 // ----------------------------
+$('#index_hint').on('click', function(){
+  $('#index_hint_block').fadeIn();
+});
+$('#index_close_hint').on('click', function(){
+  $('#index_hint_block').fadeOut();
+});
 
 $('#hidePopUp').on('click', function(){
   $('#hidePopUp').fadeOut();

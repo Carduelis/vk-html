@@ -159,6 +159,14 @@ var trainingMode = false;
 		ctrl(blockId,lamp,dataNumber).addClass(status);	
 	}
 
+$(document).ready(function(){
+	$('#index_hint').on('click', function(){
+	  $('#index_hint_block').fadeIn();
+	});
+	$('#index_close_hint').on('click', function(){
+	  $('#index_hint_block').fadeOut();
+	});
+});
 function loadPage() {
 
 

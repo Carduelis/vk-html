@@ -1129,7 +1129,10 @@ top: 15%;
   box-shadow: 0 0.5rem 1rem;
 }
 #index_hint_block .overflow {
-  overflow: hidden;
+	overflow: hidden;
+	max-height: 80%;
+	text-align: left;
+	overflow-y: auto;
 }
 #index_hint_block .left,
 #index_hint_block .right {
@@ -1223,7 +1226,6 @@ top: 15%;
   text-align: center;
 }
 .welcome .authors ul:hover {
-  background-color: rgba(255, 255, 255, 0.6);
 }
 .welcome .authors ul li:first-child {
   color: #000000;

@@ -440,6 +440,23 @@ var exercisesContainer = {
 						state : 'on',
 						description : 'Отдайте команду "ОТКЛЮЧИТЬ ПИТАНИЕ РСП" в ЛАРИНГОФОН',
 					},
+					action_1 : {
+							inStack : 'stack7',
+							inBlock : 'stack7_block1',
+							onSide : 'stack7_block1_front',
+							type : 'scale',
+							num : '1',
+							status : '-50',
+						},
+					action_2 : {
+							inStack : 'stack7',
+							inBlock : 'stack7_block1',
+							onSide : 'stack7_block1_front',
+							type : 'lamp',
+							num : '15',
+							status : 'off',
+						},
+
 				},
 		},
 		el8 : {
@@ -455,6 +472,23 @@ var exercisesContainer = {
 				position_1 : {
 					state : '0',
 					description : 'Установите клеммы в правильном порядке',
+					action_1 : {
+							inStack : 'stack7',
+							inBlock : 'stack7_block1',
+							onSide : 'stack7_block1_front',
+							type : 'scale',
+							num : '1',
+							status : '34',
+						},
+					action_2 : {
+							inStack : 'stack7',
+							inBlock : 'stack7_block1',
+							onSide : 'stack7_block1_front',
+							type : 'lamp',
+							num : '15',
+							status : 'on',
+						},
+
 				},
 			},
 		},

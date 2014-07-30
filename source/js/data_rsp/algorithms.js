@@ -439,7 +439,7 @@ var exercisesContainer = {
 					position_1 : {
 						state : 'on',
 						description : 'Отдайте команду "ОТКЛЮЧИТЬ ПИТАНИЕ РСП" в ЛАРИНГОФОН',
-					},
+					
 					action_1 : {
 							inStack : 'stack7',
 							inBlock : 'stack7_block1',
@@ -456,7 +456,7 @@ var exercisesContainer = {
 							num : '15',
 							status : 'off',
 						},
-
+					},
 				},
 		},
 		el8 : {

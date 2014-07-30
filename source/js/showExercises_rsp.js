@@ -38,6 +38,21 @@ $('#go').one('click',function(){
 		if (phases == 'phase_correct') {
 			$('.element[view_special="phase"]').attr('phase','correct')
 		}
+		if (fiders == 'fider1') {
+			$('.element[type="toggler"][fider="1"]').attr('num','1');
+			$('.element[type="toggler"][fider="2"]').attr('num','2');
+		}
+		if (fuders == 'fider2') {
+			$('.element[type="toggler"][fider="2"]').attr('num','1');
+			$('.element[type="toggler"][fider="1"]').attr('num','2');
+		}
+		$('.element[type="toggler"][fider]').on('click', function(){
+			if ($(this).attr('status') == '1') {
+				$('.element[view_special="phase"]').attr('phase','correct')
+			} else {
+				$('.element[view_special="phase"]').attr('phase','incorrect')
+			}
+		})
 	}
 		
 	$('#history').one('click', function(){

@@ -170,6 +170,31 @@ footer {
 			} 
 		}
 	}
+
+	&[type="toggler"][fider="1"] {
+		.element(@el*140);
+		.body {
+			background-image: url('@{path-to-elements}/contacts/123.png')
+		}
+		&[status='1'] .body {
+			background-image: url('@{path-to-elements}/contacts/213.png')
+		}
+		padding: 6% 7.5%;
+		margin-left: -2.5%;
+		margin-top: -2.5%;
+	}
+	&[type="toggler"][fider="2"] {
+		.element(@el*140);
+		.body {
+			background-image: url('@{path-to-elements}/contacts/456.png')
+		}
+		&[status='1'] .body {
+			background-image: url('@{path-to-elements}/contacts/546.png')
+		}
+		padding: 6% 7.5%;
+		margin-left: -2.5%;
+		margin-top: -2.5%;
+	}
 	&[type="toggler"][view="rotate"] {
 		.element(@el*50);
 		.body {

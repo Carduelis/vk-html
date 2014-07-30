@@ -42,7 +42,7 @@ $('#go').one('click',function(){
 			$('.element[type="toggler"][fider="1"]').attr('num','1');
 			$('.element[type="toggler"][fider="2"]').attr('num','2');
 		}
-		if (fuders == 'fider2') {
+		if (fiders == 'fider2') {
 			$('.element[type="toggler"][fider="2"]').attr('num','1');
 			$('.element[type="toggler"][fider="1"]').attr('num','2');
 		}

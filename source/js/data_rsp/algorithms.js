@@ -492,8 +492,40 @@ var exercisesContainer = {
 				},
 			},
 		},
-
 		el9 : {
+			click: '6',
+				current : {
+					inStack : 'stack7',
+					inBlock : 'stack7_block1',
+					onSide : 'stack7_block1_front',
+					num : '22',
+					type : 'next',
+				},
+				positions : {
+					position_1 : {
+						state : 'on',
+						description : 'Отдайте команду "ПОДАТЬ ПИТАНИЕ НА РСП" в ЛАРИНГОФОН',
+					
+					action_1 : {
+							inStack : 'stack7',
+							inBlock : 'stack7_block1',
+							onSide : 'stack7_block1_front',
+							type : 'scale',
+							num : '1',
+							status : '34',
+						},
+					action_2 : {
+							inStack : 'stack7',
+							inBlock : 'stack7_block1',
+							onSide : 'stack7_block1_front',
+							type : 'lamp',
+							num : '15',
+							status : 'on',
+						},
+					},
+				},
+		},
+		el10 : {
 			multiply: 'fiders',
 			fider1 : {
 				click : '6',
@@ -528,7 +560,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el10 : {
+		el11 : {
 			multiply: 'fiders',
 			fider1 : {
 				click : '7',
@@ -563,7 +595,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el11 : {
+		el12 : {
 			click : '10',
 			current : {
 				inStack : 'stack7',
@@ -579,7 +611,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el12 : {
+		el13 : {
 			click : '10',
 			current : {
 				inStack : 'stack7',
@@ -595,7 +627,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el13 : {
+		el14 : {
 			click : '10',
 			current : {
 				inStack : 'stack7',
@@ -611,7 +643,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el14 : {
+		el15 : {
 			click : '11',
 			current : {
 				inStack : 'stack7',
@@ -627,24 +659,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el15 : {
-			shift : '0',
-
-			/*click : '11',
-			current : {
-				inStack : 'stack7',
-				inBlock : 'stack7_block1',
-				onSide : 'stack7_block1_front',
-				num : '73',
-				type : 'toggler',
-			},
-			positions : {
-				position_1 : {
-					state : '1', //этот шаг не нужен, но переделывать ради него всё дальнейшее упражнение очень не хочется
-					description : 'Включите автомат ДИСПЕТЧЕРСКИЙ на распределительном щите',
-				},
-			}, */
-		},
+		
 		el16 : {
 			click : '12',
 			current : {
@@ -1300,6 +1315,23 @@ var exercisesContainer = {
 					position_1 : {
 						state : 'on',
 						description : 'Нажать кнопку СИГНАЛ В СИЛОВУЮ',
+
+						action_1 : {
+							inStack : 'stack7',
+							inBlock : 'stack7_block1',
+							onSide : 'stack7_block1_front',
+							type : 'scale',
+							num : '1',
+							status : '-50',
+						},
+						action_2 : {
+							inStack : 'stack7',
+							inBlock : 'stack7_block1',
+							onSide : 'stack7_block1_front',
+							type : 'lamp',
+							num : '15',
+							status : 'off',
+						},
 					},
 				},
 			},

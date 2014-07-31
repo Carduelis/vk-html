@@ -47,12 +47,12 @@ $('#go').one('click',function(){
 			$('.element[type="toggler"][fider="1"]').attr('num','2');
 		}
 		$('.element[type="toggler"][fider]').on('click', function(){
-			if ($(this).attr('status') == '1') {
+			if ($(this).attr('status') == '0') {
 				$('.element[view_special="phase"]').attr('phase','correct')
 			} else {
 				$('.element[view_special="phase"]').attr('phase','incorrect')
 			}
-		})
+		});
 	}
 		
 	$('#history').one('click', function(){

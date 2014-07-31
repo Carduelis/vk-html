@@ -1360,76 +1360,109 @@ var exercisesContainer = {
 			},
 		},
 		el8 : {
-			multiply: 'fiders',
-			fider1: {
-				click : '8',
+			click: '6',
 				current : {
 					inStack : 'stack7',
 					inBlock : 'stack7_block1',
 					onSide : 'stack7_block1_front',
-					num : '13',
-					type : 'toggler',
+					num : '22',
+					type : 'next',
 				},
 				positions : {
 					position_1 : {
-						state : '3',
-						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ДИСПЕТЧЕРСКИЙ в положение выбранного фидера',
+						state : 'on',
+						description : 'Отдайте команду "ПОДАТЬ ПИТАНИЕ НА РСП" в ЛАРИНГОФОН',
+					
+					action_1 : {
+							inStack : 'stack7',
+							inBlock : 'stack7_block1',
+							onSide : 'stack7_block1_front',
+							type : 'scale',
+							num : '1',
+							status : '34',
+						},
+					action_2 : {
+							inStack : 'stack7',
+							inBlock : 'stack7_block1',
+							onSide : 'stack7_block1_front',
+							type : 'lamp',
+							num : '15',
+							status : 'on',
+						},
 					},
 				},
-			},
-			fider2: {
-				click : '8',
-				current : {
-					inStack : 'stack7',
-					inBlock : 'stack7_block1',
-					onSide : 'stack7_block1_front',
-					num : '13',
-					type : 'toggler',
-				},
-				positions : {
-					position_1 : {
-						state : '1',
-						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ДИСПЕТЧЕРСКИЙ в положение выбранного фидера',
-					},
-				},
-			},
 		},
 		el9 : {
 			multiply: 'fiders',
 			fider1: {
-				click : '9',
+				click : '8',
 				current : {
 					inStack : 'stack7',
 					inBlock : 'stack7_block1',
 					onSide : 'stack7_block1_front',
-					num : '23',
+					num : '13',
 					type : 'toggler',
 				},
 				positions : {
 					position_1 : {
 						state : '3',
-						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ПОСАДОЧНЫЙ в положение выбранного фидера',
+						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ДИСПЕТЧЕРСКИЙ в положение выбранного фидера',
 					},
 				},
 			},
 			fider2: {
-				click : '9',
+				click : '8',
 				current : {
 					inStack : 'stack7',
 					inBlock : 'stack7_block1',
 					onSide : 'stack7_block1_front',
-					num : '23',
+					num : '13',
 					type : 'toggler',
 				},
 				positions : {
 					position_1 : {
 						state : '1',
-						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ПОСАДОЧНЫЙ в положение выбранного фидера',
+						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ДИСПЕТЧЕРСКИЙ в положение выбранного фидера',
 					},
 				},
 			},
 		},
 		el10 : {
+			multiply: 'fiders',
+			fider1: {
+				click : '9',
+				current : {
+					inStack : 'stack7',
+					inBlock : 'stack7_block1',
+					onSide : 'stack7_block1_front',
+					num : '23',
+					type : 'toggler',
+				},
+				positions : {
+					position_1 : {
+						state : '3',
+						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ПОСАДОЧНЫЙ в положение выбранного фидера',
+					},
+				},
+			},
+			fider2: {
+				click : '9',
+				current : {
+					inStack : 'stack7',
+					inBlock : 'stack7_block1',
+					onSide : 'stack7_block1_front',
+					num : '23',
+					type : 'toggler',
+				},
+				positions : {
+					position_1 : {
+						state : '1',
+						description : 'Установите переключатель ПИТАНИЕ РАДИОЛОКАТОРОВ ПОСАДОЧНЫЙ в положение выбранного фидера',
+					},
+				},
+			},
+		},
+		el11 : {
 			click : '9',
 			current : {
 				inStack : 'stack7',
@@ -1445,7 +1478,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el11 : {
+		el12 : {
 			click : '10',
 			current : {
 				inStack : 'stack7',
@@ -1461,7 +1494,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el12 : {
+		el13 : {
 			click : '10',
 			current : {
 				inStack : 'stack7',
@@ -1477,7 +1510,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el13 : {
+		el14 : {
 			click : '11',
 			current : {
 				inStack : 'stack7',
@@ -1493,7 +1526,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el14 : {
+		el15 : {
 			click : '12',
 			current : {
 				inStack : 'stack4',
@@ -1509,7 +1542,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el15 : {
+		el16 : {
 			click : '13',
 			current : {
 				inStack : 'stack1',
@@ -1526,7 +1559,7 @@ var exercisesContainer = {
 			},
 			defaultPosition : '1',
 		},
-		el16 : {
+		el17 : {
 			click : '14',
 			current : {
 				inStack : 'stack1',
@@ -1542,7 +1575,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el17 : {
+		el18 : {
 			click : '15',
 			current : {
 				inStack : 'stack1',
@@ -1558,7 +1591,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el18 : {
+		el19 : {
 			click : '16',
 			current : {
 				inStack : 'stack1',
@@ -1574,7 +1607,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el19 : {
+		el20 : {
 			click : '17',
 			current : {
 				inStack : 'stack0',
@@ -1598,7 +1631,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el20 : {
+		el21 : {
 			click : '18',
 			current : {
 				inStack : 'stack1',
@@ -1614,7 +1647,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el21 : {
+		el22 : {
 			click : '19',
 			current : {
 				inStack : 'stack4',
@@ -1662,7 +1695,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el22 : {
+		el23 : {
 			click : '20',
 			current : {
 				inStack : 'stack1',
@@ -1690,7 +1723,7 @@ var exercisesContainer = {
 				},
 			},
 		},	
-		el23 : {
+		el24 : {
 			click : '21',
 			current : {
 				inStack : 'stack1',
@@ -1730,7 +1763,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el24 : {
+		el25 : {
 			click : '22',
 			current : {
 				inStack : 'stack0',
@@ -1746,7 +1779,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el25 : {
+		el26 : {
 			click : '23',
 			current : {
 				inStack : 'stack0',
@@ -1762,7 +1795,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el26 : {
+		el27 : {
 			click : '24',
 			current : {
 				inStack : 'stack0',
@@ -1778,7 +1811,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el27 : {
+		el28 : {
 			click : '25',
 			current : {
 				inStack : 'stack4',
@@ -1794,7 +1827,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el28 : {
+		el29 : {
 			click : '26',
 			current : {
 				inStack : 'stack1',
@@ -1811,7 +1844,7 @@ var exercisesContainer = {
 			},
 			defaultPosition : '1',
 		},
-		el29 : {
+		el30 : {
 			multiply: 'frequency',
 			first: {
 				click : '27',
@@ -1862,7 +1895,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el30 : {
+		el31 : {
 			click : '28',
 			current : {
 				inStack : 'stack0',
@@ -1878,7 +1911,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el31 : {
+		el32 : {
 			multiply: 'crystal_current',
 			current_ok : {
 				click : '29',
@@ -1954,7 +1987,7 @@ var exercisesContainer = {
 			},
 			defaultPosition : '4',
 		},	
-		el32 : {
+		el33 : {
 			multiply: 'crystal_current',
 			current_ok : {
 				shift : '1', // У нас одно действие "лишнее". Открыть/закрыть крышку в действие не входит.
@@ -1985,7 +2018,7 @@ var exercisesContainer = {
 				defaultPosition : '2',
 			},
 		},
-		el33 : {
+		el34 : {
 			multiply: 'noises',
 			in_red_zone : {
 				click : '31',
@@ -2060,7 +2093,7 @@ var exercisesContainer = {
 				},
 			},
 		},
-		el34 : {
+		el35 : {
 			multiply: 'noises',
 			in_red_zone : {
 			click : '32',
@@ -2113,7 +2146,7 @@ var exercisesContainer = {
 				defaultPosition : '2',
 			},
 		},
-		el35 : {
+		el36 : {
 			click : '33',
 			current : {
 				inStack : 'stack1',
